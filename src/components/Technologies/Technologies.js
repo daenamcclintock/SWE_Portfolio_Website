@@ -1,8 +1,9 @@
 import React from 'react';
-import { DiReact, DiPostgresql, DiHeroku } from 'react-icons/di';
+import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBootstrap, DiMongodb, DiGithubAlt, DiHeroku } from 'react-icons/di';
 import { FaAws } from "react-icons/fa";
-import { SiPostman } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
+import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
+import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
+
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem } from './TechnologiesStyles';
@@ -13,19 +14,88 @@ const Technologies = () =>  (
     <SectionTitle>Technologies</SectionTitle>
     <Tech>
       <TechItem>
-        <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" />
-        React.js
+        <SiJavascript size="5rem"/>
+        JAVASCRIPT
       </TechItem>
       <TechItem>
-        <DiReact />
-        Javascript
+        <DiReact size="5rem"/>
+        REACT
+      </TechItem>
+      <TechItem>
+        <DiNodejsSmall size="5rem"/>
+        NODE.JS
+      </TechItem>
+      <TechItem>
+        <SiExpress size="5rem"/>
+        EXPRESS.JS
+      </TechItem>
+      <TechItem>
+        <SiNextdotjs size="5rem"/>
+        NEXT.JS
+      </TechItem>
+      <TechItem>
+        <DiHtml5 size="5rem"/>
+        HTML5
+      </TechItem>
+      <TechItem>
+        <IoLogoCss3 size="5rem"/>
+        CSS3
+      </TechItem>
+      <TechItem>
+        <DiSass size="5rem"/>
+        SASS
+      </TechItem>
+      <TechItem>
+        <DiBootstrap size="5rem"/>
+        BOOTSTRAP4
+      </TechItem>
+      <TechItem>
+        <DiPython size="5rem"/>
+        PYTHON
+      </TechItem>
+      <TechItem>
+        <DiMongodb size="5rem"/>
+        MONGODB
+      </TechItem>
+      <TechItem>
+        <SiPostman size="5rem"/>
+        POSTMAN
+      </TechItem>
+      <TechItem>
+        <SiDjango size="5rem"/>
+        DJANGO
+      </TechItem>
+      <TechItem>
+        <DiPostgresql size="5rem"/>
+        POSTGRESQL
+      </TechItem>
+      <TechItem>
+        <IoLogoGithub size="5rem"/>
+        GITHUB
+      </TechItem>
+      <TechItem>
+        <DiGithubAlt size="5rem"/>
+        GIT
+      </TechItem>
+      <TechItem>
+        <DiHeroku size="5rem"/>
+        HEROKU
+      </TechItem>
+      <TechItem>
+        <SiSolidity size="5rem"/>
+        SOLIDITY
+      </TechItem>
+      <TechItem>
+        <SiBlockchaindotcom size="5rem"/>
+        BLOCKCHAIN
+      </TechItem>
+      <TechItem>
+        <SiWeb3Dotjs size="5rem"/>
+        WEB3.JS
       </TechItem>
     </Tech>
     <List>
       <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
@@ -36,9 +106,6 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiPostgresql size="3rem" />
-        </picture>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
@@ -49,9 +116,6 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <SiPostman size="3rem" />
-        </picture>
         <ListContainer>
           <ListTitle>Management & Deployment</ListTitle>
           <ListParagraph>

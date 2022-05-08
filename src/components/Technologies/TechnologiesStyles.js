@@ -159,6 +159,8 @@ export const TechItem = styled.li`
   max-width: 320px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 
   @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
