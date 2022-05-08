@@ -1,5 +1,8 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiReact, DiPostgresql, DiHeroku } from 'react-icons/di';
+import { FaAws } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -20,31 +23,34 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experiece with <br />
-            React.js
+            React.js, Next.js, <br />
+            Node.js, and Express.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiFirebase size="3rem" />
+          <DiPostgresql size="3rem" />
         </picture>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            MongoDB and <br />
+            PostgreSQL Databases
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <SiPostman size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Management & Deployment</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma
+            Git, Github, Heroku, <br />
+            and Postman
           </ListParagraph>
         </ListContainer>
       </ListItem>

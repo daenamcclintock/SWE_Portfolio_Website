@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
+import { FaDiscord } from "react-icons/fa";
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
@@ -32,14 +33,14 @@ const Header = () =>  (
       </li>        
     </Div2>
       <Div3>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://github.com/daenamcclintock">
           <AiFillGithub size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
+        <SocialIcons href="https://www.linkedin.com/in/daenamcclintock/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillInstagram size="3rem"/>
+        <SocialIcons href="">
+          <FaDiscord size="3rem"/>
         </SocialIcons>
       </Div3>
     </Container>

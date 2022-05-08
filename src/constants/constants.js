@@ -38,9 +38,9 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 'Spring 2019', text: "Spent the Semester in Barcelona, Spain working for a VC firm", },
+  { year: 'Summer 2019', text: "Intered with BNY Mellon's Buyside Equity Research Division", },
+  { year: 'Spring 2020', text: "Graduated from UMass Amherst Cum Laude with degrees in Finance and Economics", },
+  { year: '2020/ 2021', text: "Worked for BNY Mellon in a Client-Facing Wealth Management role", },
+  { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program", },
 ];
