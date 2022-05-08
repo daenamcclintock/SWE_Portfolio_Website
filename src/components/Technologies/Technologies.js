@@ -2,18 +2,25 @@ import React from 'react';
 import { DiReact, DiPostgresql, DiHeroku } from 'react-icons/di';
 import { FaAws } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
-    </SectionText>
+    <Tech>
+      <TechItem>
+        <img src="https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png" />
+        React.js
+      </TechItem>
+      <TechItem>
+        <DiReact />
+        Javascript
+      </TechItem>
+    </Tech>
     <List>
       <ListItem>
         <picture>
