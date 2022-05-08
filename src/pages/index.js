@@ -1,5 +1,5 @@
 import Acomplishments from '../components/Acomplishments/Acomplishments';
-import Hero from '../components/Hero/Hero';
+import Me from '../components/Me/Me';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <Layout>
       <Section grid>
-        <Hero />
+        <Me />
       </Section>
       <Projects />
       <Technologies />

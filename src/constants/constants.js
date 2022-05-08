@@ -20,7 +20,7 @@ export const projects = [
   {
     title: 'NFT Social',
     description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
-    image: '/images/3.jpg',
+    image: '/Users/daenamcclintock/sei/projects/Portfolio_Website/portfolio_website/images/NFT_Social.png',
     tags: ['React', 'WebRTC'],
     source: 'https://google.com',
     visit: 'https://google.com',
@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'Bringing Down The House!',
     description: "Interactive front-end blackjack game. Operates with logic mirroring casino-style blackjack and an AI simulating the dealer. Includes functionality to keep the card count and teach the user how to count cards.",
-    image: '/images/4.jpg',
+    image: 'https://static.turbosquid.com/Preview/2019/10/06__01_42_32/1.png86A9EB7C-E95E-431F-81C3-4FDD3D775C6ALarge.jpg',
     tags: ['Javascript', 'HTML', 'CSS', 'Bootstrap'],
     source: 'https://google.com',
     visit: 'https://github.com/daenamcclintock/bringing-down-the-house',
