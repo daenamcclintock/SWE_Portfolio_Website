@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from "axios"
 import { Spinner, Container, Carousel, Button, Card } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText, ContactForm } from './ContactStyles';
@@ -19,7 +18,6 @@ const Acomplishments = () => {
     setEmail("");
     setMessage("");
     setSubject("");
-    // navigate("/");
   };
 
   // const transporter = nodemailer.createTransport({

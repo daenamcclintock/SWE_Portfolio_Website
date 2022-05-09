@@ -57,4 +57,20 @@ export const Image = styled.img`
   margin-left: 5rem;
   border: 2px solid white;
   border-radius: 999%;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 20rem;
+    width: 20rem;
+    margin-left: 5rem;
+    border: 2px solid white;
+    border-radius: 999%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 30rem;
+    width: 30rem;
+    margin-left: 5rem;
+    border: 2px solid white;
+    border-radius: 999%;
+  }
 `
