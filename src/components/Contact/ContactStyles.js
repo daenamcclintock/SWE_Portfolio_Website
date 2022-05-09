@@ -132,3 +132,10 @@ export const IconContainer = styled.div`
     justify-content: space-between;
   }
 `
+
+export const ContactForm = styled.div`{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+`

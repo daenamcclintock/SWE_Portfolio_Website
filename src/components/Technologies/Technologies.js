@@ -6,7 +6,7 @@ import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
 
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem, TechStyle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id="tech">
@@ -83,7 +83,7 @@ const Technologies = () =>  (
       </TechItem>
       <TechItem>
         <SiSolidity size="5rem"/>
-        SOLIDITY
+          SOLIDITY
       </TechItem>
       <TechItem>
         <SiBlockchaindotcom size="5rem"/>

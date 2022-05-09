@@ -101,6 +101,8 @@ export const ListItem = styled.li`
   max-width: 320px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 
 @media ${props => props.theme.breakpoints.md}{
   max-width: 203px;
@@ -170,5 +172,12 @@ export const TechItem = styled.li`
   margin-bottom: 14px;
   max-width: 320px;
   flex-direction: row;
+  }
+`
+
+export const TechStyle = styled.div`
+  &:hover{
+    background: #801414;
+
   }
 `
