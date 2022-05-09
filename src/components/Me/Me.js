@@ -7,11 +7,9 @@ import Modal from 'react-modal';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, RightSection, Image } from './MeStyles';
-import myPDF from '/Users/daenamcclintock/sei/projects/Portfolio_Website/portfolio_website/resume/Daena McClintock - SWE Resume.pdf'
-
+// import myPDF from '../../../resume/Daena McClintock - SWE Resume.pdf'
 
 const Me = (props) => {
-  const [modalOpen, setModalOpen] = React.useState(false)
   const textRef = useRef();
 
   useEffect(() => {
@@ -37,11 +35,11 @@ const Me = (props) => {
             </h3>
           </SectionText>
           <div>
-            {/* <Link href='/resume'> */}
-            <a href={myPDF} download>
-                <Button>Resume</Button>
-            </a>
-            {/* </Link> */}
+            <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
+              <a target="_blank">
+                  <Button>Resume</Button>
+              </a>
+            </Link>
           </div>
         </LeftSection>
         <RightSection>
