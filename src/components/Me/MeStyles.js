@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const BackgroundImage = styled.div`
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4D1BAQHkFmZqTpUFgg/company-background_10000/0/1592519376314?e=2147483647&v=beta&t=nZzx-jnr2XAitIxytuXpuXnH0KUxm9be9H_q1N_7qYk');
+  background-repeat: no-repeat;
+  background-size: 120rem;
+`
+
 export const LeftSection = styled.div`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
