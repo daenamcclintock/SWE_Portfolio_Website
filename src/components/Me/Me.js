@@ -6,7 +6,7 @@ import Modal from 'react-modal';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage } from './MeStyles';
+import { LeftSection, RightSection, Image, BackgroundImage, MeSection } from './MeStyles';
 // import myPDF from '../../../resume/Daena McClintock - SWE Resume.pdf'
 
 const Me = (props) => {
@@ -25,7 +25,7 @@ const Me = (props) => {
   return (
     <>
     <BackgroundImage>
-      <Section row nopadding>
+      <MeSection row nopadding>
         <LeftSection>
           <SectionTitle main center>
             Daena McClintock
@@ -52,7 +52,7 @@ const Me = (props) => {
             </Card.Body>
         </Card>
         </RightSection>
-      </Section>
+      </MeSection>
     </BackgroundImage>
     </>
   )
