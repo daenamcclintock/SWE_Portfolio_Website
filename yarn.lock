@@ -1555,6 +1555,11 @@
   "resolved" "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
   "version" "1.0.0"
 
+"ityped@^1.0.3":
+  "integrity" "sha512-46Qnh3qs+6EJlWDHmvWRW6qiz5jFy2mkh9UvtTvQmLJMZIjKrdz4du68le7hLX4tAWCp6QTKiq/OuLv6huHxZg=="
+  "resolved" "https://registry.npmjs.org/ityped/-/ityped-1.0.3.tgz"
+  "version" "1.0.3"
+
 "jest-worker@^27.4.5":
   "integrity" "sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg=="
   "resolved" "https://registry.npmjs.org/jest-worker/-/jest-worker-27.5.1.tgz"
