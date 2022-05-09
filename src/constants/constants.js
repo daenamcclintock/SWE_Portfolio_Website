@@ -20,7 +20,7 @@ export const projects = [
   {
     title: 'NFT Social',
     description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
-    image: '/images/NFT_Social.png',
+    image: '',
     tags: ['HTML', 'Express', 'Mongo', 'Node'],
     source: 'https://google.com',
     visit: 'https://github.com/daenamcclintock/NFT_Social',

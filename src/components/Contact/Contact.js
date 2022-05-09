@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText, ContactForm } from './ContactStyles';
 
-// ********** NPM Nodemailer **********
+// const nodemailer = require('nodemailer')
+
 
 const Acomplishments = () => {
 
@@ -21,28 +22,37 @@ const Acomplishments = () => {
     // navigate("/");
   };
 
-  const sendMessage = (e) => {
-      e.preventDefault();
-      const data = new FormData();
-      data.append("email", email);
-      data.append("subject", subject);
-      data.append("message", message);
+  // const transporter = nodemailer.createTransport({
+  //   service: 'gmail',
+  //   auth: {
+  //     user: 'daena.c.mcclintock@gmail.com',
+  //     password: 'Barcelona1029$'
+  //   },
+  // })
+  
+  // const options = {
+  //   from: 'daena.c.mcclintock@gmail.com',
+  //   to: email,
+  //   subject: subject,
+  //   text: message
+  // }
 
-  const dev_url = "http://127.0.0.1:3000/contact";
-  const production_url = "/contact"
-  axios
-      .post(production_url, data)
-      .then((response) => {
-      console.log(response);
-      }, resetForm())
-      .catch((error) => {
-      console.log(error);
-      });
-  };
+  // const sendMessage = () => {
+  //   transporter.sendMail(options, function (err, info) {
+  //     if(err) {
+  //       console.log(err)
+  //     }
+  //     console.log('Sent: ', info.response)
+  //   })
+  // }
+
+  console.log('THIS IS EMAIL', email)
+  console.log('THIS IS SUBJECT', subject)
+  console.log('THIS IS message', message)
 
   return (
     <Section>
-      <SectionTitle>Contact Me</SectionTitle>
+      <SectionTitle>Let's Chat!</SectionTitle>
       <Card style={{padding: '5px'}}>
         <form>
             <label>Email</label>
@@ -81,7 +91,7 @@ const Acomplishments = () => {
         <Card.Footer>
           <Button
           style={{padding: '5px', }}
-          onClick={sendMessage}>SEND MESSAGE</Button>
+          onClick={''}>SEND MESSAGE</Button>
         </Card.Footer>
       </Card>
       <br />

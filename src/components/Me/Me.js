@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from "react";
+import { Card } from 'react-bootstrap'
 import { init } from "ityped";
 import Link from 'next/link';
 import Modal from 'react-modal';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './MeStyles';
+import { LeftSection, RightSection, Image } from './MeStyles';
+import myPDF from '/Users/daenamcclintock/sei/projects/Portfolio_Website/portfolio_website/resume/Daena McClintock - SWE Resume.pdf'
 
 
 const Me = (props) => {
@@ -20,25 +22,7 @@ const Me = (props) => {
       strings: ["Fullstack Engineer", "Blockchain Developer", "Freelance Developer"],
     });
   }, []);
-
-  const modalStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-    },
-  };
-
-  const openModal = () => {
-    setModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setModalOpen(false)
-  }
+ 
 
   return (
     <>
@@ -53,11 +37,22 @@ const Me = (props) => {
             </h3>
           </SectionText>
           <div>
-            <Link href='/resume'>
+            {/* <Link href='/resume'> */}
+            <a href={myPDF} download>
                 <Button>Resume</Button>
-            </Link>
+            </a>
+            {/* </Link> */}
           </div>
         </LeftSection>
+        <RightSection>
+        <Card className="container m-2">
+            <Card.Body>
+              <div className="container">
+                <Image src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/36742202_1801106396649810_5733688723485229056_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=174925&_nc_ohc=W8KvDrVgbycAX9ef_h7&_nc_ht=scontent-lax3-2.xx&oh=00_AT8eh8RJXN5SyQ960b1b1PFMRMez-B3Se5dJHFwVFCABsg&oe=629D3742'}/>              
+              </div>
+            </Card.Body>
+        </Card>
+        </RightSection>
       </Section>
     </>
   )
