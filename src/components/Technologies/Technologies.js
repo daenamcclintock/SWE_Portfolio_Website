@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBootstrap, DiMongodb, DiGithubAlt, DiHeroku } from 'react-icons/di';
-import { FaAws } from "react-icons/fa";
+import { FaAws, FaHardHat } from "react-icons/fa";
 import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
 
@@ -93,6 +93,10 @@ const Technologies = () =>  (
         <SiWeb3Dotjs size="5rem"/>
         WEB3.JS
       </TechItem>
+      <TechItem>
+        <FaHardHat size="5rem"/>
+        HARDHAT
+      </TechItem>
     </Tech>
     <List>
       <ListItem>
@@ -122,6 +126,16 @@ const Technologies = () =>  (
             Experience with <br />
             Git, Github, Heroku, <br />
             and Postman
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <ListContainer>
+          <ListTitle>Web3</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            Solidity, Hardhat, Ganache, <br />
+            and Web3.js
           </ListParagraph>
         </ListContainer>
       </ListItem>

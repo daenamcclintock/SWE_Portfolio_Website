@@ -6,8 +6,9 @@ import Modal from 'react-modal';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage, MeSection } from './MeStyles';
-// import myPDF from '../../../resume/Daena McClintock - SWE Resume.pdf'
+import { LeftSection, RightSection, Image, BackgroundImage, MeSection, Canvas } from './MeStyles';
+// import Three from "../ThreeJS/Three";
+
 
 const Me = (props) => {
   const textRef = useRef();
@@ -48,6 +49,9 @@ const Me = (props) => {
             <Card.Body>
               <div className="container">
                 <Image src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/36742202_1801106396649810_5733688723485229056_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=174925&_nc_ohc=W8KvDrVgbycAX9ef_h7&_nc_ht=scontent-lax3-2.xx&oh=00_AT8eh8RJXN5SyQ960b1b1PFMRMez-B3Se5dJHFwVFCABsg&oe=629D3742'}/>              
+                {/* <Canvas>
+                  <Three />
+                </Canvas> */}
               </div>
             </Card.Body>
         </Card>

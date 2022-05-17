@@ -104,3 +104,9 @@ export const Image = styled.img`
     border-radius: 999%;
   }
 `
+
+export const Canvas = styled.canvas`
+  position: fixed;
+  top: 0;
+  left: 0;
+`
