@@ -29,7 +29,7 @@ export const Div1 = styled.div`
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -111,14 +111,13 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 // Social Icons 
 
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: white;
-border-radius: 50px;
-  padding: 8px;
-&:hover {
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    padding: 8px;
+    &:hover {
     background-color: #212d45;
     transform: scale(1.2);
-    cursor: pointer;
-    
+    cursor: pointer; 
   }
 `

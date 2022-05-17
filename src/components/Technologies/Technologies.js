@@ -3,6 +3,7 @@ import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBoot
 import { FaAws, FaHardHat } from "react-icons/fa";
 import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
+import { SiThreedotjs } from "react-icons/si";
 
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
@@ -32,6 +33,10 @@ const Technologies = () =>  (
       <TechItem>
         <SiNextdotjs size="5rem"/>
         NEXT.JS
+      </TechItem>
+      <TechItem>
+        <SiThreedotjs size="5rem"/>
+        SiThreedotjs
       </TechItem>
       <TechItem>
         <DiHtml5 size="5rem"/>

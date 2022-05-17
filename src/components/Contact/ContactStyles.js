@@ -1,5 +1,29 @@
 import styled from "styled-components"
 
+export const ContactSection = styled.section`
+  display: ${(props) => props.grid ? "grid" : "flex" };
+  flex-direction: ${(props) => props.row ? "row" : "column" };
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
+  margin: 0 auto;
+  max-width: 1080px;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`
+
 export const Boxes = styled.div`
   width: 100%;
   display: grid;
@@ -21,6 +45,42 @@ export const Boxes = styled.div`
     margin: 24px auto;
   }
 `
+
+export const LeftSection = styled.div`
+  width: 100%;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+`;
+
+export const RightSection = styled.div`
+  width: 100%;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+`;
 
 export const Box = styled.div`
   background: #212D45;
@@ -133,9 +193,83 @@ export const IconContainer = styled.div`
   }
 `
 
+
+export const Image = styled.img`
+height: 40rem;
+width: 40rem;
+margin-top: 15rem;
+border: 2px solid white;
+border-radius: 999%;
+
+@media ${(props) => props.theme.breakpoints.sm} {
+  height: 20rem;
+  width: 20rem;
+  margin-left: 5rem;
+  margin-top: 10rem;
+  border: 2px solid white;
+  border-radius: 999%;
+}
+
+@media ${(props) => props.theme.breakpoints.md} {
+  height: 30rem;
+  width: 30rem;
+  margin-left: 5rem;
+  margin-top: 10rem;
+  border: 2px solid white;
+  border-radius: 999%;
+}
+`
+
 export const ContactForm = styled.div`{
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 10px;
 }
+`
+
+export const ContactLabel = styled.label`
+  font-size: 18px;
+  padding-bottom: 5px;
+`
+
+export const ContactInput = styled.input`
+  margin-top: .2rem;
+  width: 50%;
+  padding: 2px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+  box-sizing: border-box;
+
+`
+
+export const ContactMessage = styled.textarea`
+  margin-top: .2rem;
+  width: 60%;
+  height: 150px;
+  padding: 2px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+`
+
+export const ContactButton = styled.button`
+  margin-top: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 1rem;
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+
+
+  &:hover {
+    border: 2px solid white;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.45);
+  }
 `
