@@ -6,9 +6,10 @@ import Modal from 'react-modal';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage, MeSection, Canvas } from './MeStyles';
-// import Three from "../ThreeJS/Three";
+import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container } from './MeStyles';
+import { MdFileDownload } from "react-icons/md";
 
+// import Three from "../ThreeJS/Three";
 
 const Me = (props) => {
   const textRef = useRef();
@@ -25,39 +26,30 @@ const Me = (props) => {
 
   return (
     <>
-    <BackgroundImage>
       <MeSection row nopadding>
         <LeftSection>
           <SectionTitle main center>
             Daena McClintock
           </SectionTitle>
-          <SectionText>
-            <h3>
-              I am a <span style={{color: 'rgba(255, 255, 255, 0.75)'}} ref={textRef}></span>
-            </h3>
-          </SectionText>
-          <div>
+          <Container>
+            <MeText>
+              <h3>
+                I am a <span style={{color: 'rgba(255, 255, 255, 0.95)'}} ref={textRef}></span>
+              </h3>
+            </MeText>
+          </Container>
+          <Container>
+            <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
+              <Button>Resume</Button>
+            </Link>
             <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
               <a target="_blank">
-                  <Button>Resume</Button>
+                <Button><MdFileDownload /></Button>
               </a>
             </Link>
-          </div>
+          </Container>
         </LeftSection>
-        <RightSection>
-        <Card className="container m-2">
-            <Card.Body>
-              <div className="container">
-                <Image src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/36742202_1801106396649810_5733688723485229056_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=174925&_nc_ohc=W8KvDrVgbycAX9ef_h7&_nc_ht=scontent-lax3-2.xx&oh=00_AT8eh8RJXN5SyQ960b1b1PFMRMez-B3Se5dJHFwVFCABsg&oe=629D3742'}/>              
-                {/* <Canvas>
-                  <Three />
-                </Canvas> */}
-              </div>
-            </Card.Body>
-        </Card>
-        </RightSection>
       </MeSection>
-    </BackgroundImage>
     </>
   )
 };

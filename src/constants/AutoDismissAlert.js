@@ -1,5 +1,6 @@
 import React from 'react'
 import Alert from 'react-bootstrap/Alert'
+import { Alerts, AlertBody } from './AlertStyles'
 
 // import './AutoDismissAlert.scss'
 
@@ -33,16 +34,19 @@ class AutoDismissAlert extends React.Component {
 		}
 
 		return (
-			<Alert
-				dismissible
-				show={this.state.show}
-				variant={variant}
-				onClose={this.handleClose}>
-				<div className='container'>
-					<Alert.Heading>{heading}</Alert.Heading>
-					<p className='alert-body'>{message}</p>
-				</div>
-			</Alert>
+			<Alerts>
+				<Alert
+					dismissible
+					show={this.state.show}
+					variant={variant}
+					onClose={this.handleClose}
+				>
+					<div className='container'>
+						<Alert.Heading>{heading}</Alert.Heading>
+						<AlertBody>{message}</AlertBody>
+					</div>
+				</Alert>
+			</Alerts>
 		)
 	}
 }

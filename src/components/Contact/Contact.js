@@ -1,30 +1,12 @@
 import React, { useState, useRef } from 'react';
-import axios from "axios"
 import { Spinner, Container, Carousel, Button, Card } from "react-bootstrap";
 
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import emailjs from '@emailjs/browser';
 import { ContactSection, Image, LeftSection, RightSection, ContactForm, ContactButton, ContactInput, ContactMessage, ContactLabel } from './ContactStyles';
-import AutoDismissAlert from '../../constants/AutoDismissAlert';
 
-const Contact = () => {
-  const [msgAlerts, setMsgAlerts] = useState([])
-
-  // Msg Alert
-	const deleteAlert = (id) => {
-		setMsgAlerts((prevState) => {
-			return (prevState.filter((msg) => msg.id !== id) )
-		})
-	}
-
-	const msgAlert = ({ heading, message, variant }) => {
-		const id = uuid()
-		setMsgAlerts(() => {
-			return (
-				[{ heading, message, variant, id }]
-      )
-		})
-	}
+const Contact = (props) => {
+  const { msgAlert } = props
 
   // Send Email
   const form = useRef();
@@ -34,8 +16,19 @@ const Contact = () => {
     emailjs.sendForm('gmail', 'portfolio_website', form.current, 'SbJwbvEIoRP7VcCav')
       .then((result) => {
           console.log(result.text);
-      }, (error) => {
+          msgAlert({
+            // heading: 'Success!',
+            message: 'Message sent successfully!',
+            // variant: 'success',
+          })
+      },
+      (error) => {
           console.log(error.text);
+          msgAlert({
+            // heading: 'Error ' + error.text,
+            message: 'Failed to send message. Please refresh and try again.',
+            // variant: 'danger',
+          })
       });
       e.target.reset()
   };
@@ -70,16 +63,6 @@ const Contact = () => {
         <RightSection>
           <Image src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/36742202_1801106396649810_5733688723485229056_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=174925&_nc_ohc=W8KvDrVgbycAX9ef_h7&_nc_ht=scontent-lax3-2.xx&oh=00_AT8eh8RJXN5SyQ960b1b1PFMRMez-B3Se5dJHFwVFCABsg&oe=629D3742'}/>
         </RightSection>
-        {msgAlerts.map((msgAlert) => (
-          <AutoDismissAlert
-          key={msgAlert.id}
-          heading={msgAlert.heading}
-          variant={msgAlert.variant}
-          message={msgAlert.message}
-          id={msgAlert.id}
-          deleteAlert={deleteAlert}
-					/>
-          ))}
           <SectionDivider/>
     </ContactSection>
   )
