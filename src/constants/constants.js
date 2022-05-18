@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'LuxEstate',
     description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilizing the MapBox API for visual mapping and the NPM Nodemailer package to allow users to email the agency.",
-    image: 'https://lh3.google.com/u/0/d/1H_v9qF4V11ld6jYPlTLN1Yop9QbNP8t7=w320-h200-k-iv1',
+    image: 'https://github.com/daenamcclintock/Portfolio_Website/blob/main/src/constants/images/LuxEstate.png?raw=true',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
     visit: 'https://github.com/daenamcclintock/Project-4-Client',
