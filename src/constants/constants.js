@@ -13,7 +13,7 @@ export const projects = [
     description:"Full-stack e-commerce store featuring user authentication, full CRUD functionality, and the ability for users to add products to their cart and checkout. Built a proprietary API to seed data and utilized the third party Stripe API for payment processing. Developed in a team of four in three business days using Agile development methodology.",
     image: '',
     tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
+    source: 'https://gogytshop.herokuapp.com/',
     visit: 'https://github.com/daenamcclintock/GytShop-Client',
     id: 1,
   },
