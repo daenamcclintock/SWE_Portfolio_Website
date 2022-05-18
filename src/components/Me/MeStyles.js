@@ -141,3 +141,93 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
+
+export const DownloadButton = styled.button`
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+  border: none;
+  border-radius: 10%;
+  transition: 200ms;
+  color: black
+
+  &:before {
+    content: 'Back to Top';
+    position: absolute;
+    transform: translateX(-50%) translateY(45px);
+    font-size: 15px;
+    transition: 200ms;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+  }
+
+  &hover::before {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @keyframes bounce {
+    0% {transform: translateX(-50%) translateY(-50%)}
+    25% {transform: translateX(-50%) translateY(-65%)}
+    50% {transform: translateX(-50%) translateY(-50%)}
+    75% {transform: translateX(-50%) translateY(-35%)}
+    100% {transform: translateX(-50%) translateY(-50%)}
+  }
+`
+
+export const ResumeButton = styled.button`
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+  border: none;
+  border-radius: %;
+  transition: 200ms;
+  font-weight: bold;
+  color: white;
+
+  &:before {
+    content: 'Back to Top';
+    position: absolute;
+    transform: translateX(-50%) translateY(45px);
+    font-size: 15px;
+    transition: 200ms;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    width: 50px;
+    height: 50px;
+  }
+
+  &hover::before {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @keyframes bounce {
+    0% {transform: translateX(-50%) translateY(-50%)}
+    25% {transform: translateX(-50%) translateY(-65%)}
+    50% {transform: translateX(-50%) translateY(-50%)}
+    75% {transform: translateX(-50%) translateY(-35%)}
+    100% {transform: translateX(-50%) translateY(-50%)}
+  }
+`

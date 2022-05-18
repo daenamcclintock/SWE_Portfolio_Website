@@ -166,16 +166,16 @@ export const SecondaryBtn = styled.button`
   }
 `
 
+// margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
 export const ButtonBack = styled.div`
-  width: ${({ alt }) => alt ? '150px' : '262px'};
-  height: ${({ alt }) => alt ? '52px' : '64px'};
+  width: ${({ alt }) => alt ? '130px' : '240px'};
+  height: ${({ alt }) => alt ? '40px' : '50px'};
   border-radius: 50px;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
   color: #fff;
   background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
   cursor: pointer;

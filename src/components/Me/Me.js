@@ -6,7 +6,7 @@ import Modal from 'react-modal';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container } from './MeStyles';
+import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
 
 // import Three from "../ThreeJS/Three";
@@ -38,15 +38,13 @@ const Me = (props) => {
               </h3>
             </MeText>
           </Container>
-          <Container>
+          <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
             <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
-              <Button>Resume</Button>
-            </Link>
-            <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
-              <a target="_blank">
-                <Button><MdFileDownload /></Button>
-              </a>
-            </Link>
+              <Button>Resume &nbsp;</Button>
+            </Link> &nbsp;
+                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
+                    <DownloadButton><MdFileDownload /></DownloadButton>
+                </Link>
           </Container>
         </LeftSection>
       </MeSection>
