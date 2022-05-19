@@ -8,6 +8,9 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
+import { Canvas } from '@react-three/fiber'
+import Three from "../ThreeJS/Three";
+
 
 // import Three from "../ThreeJS/Three";
 
@@ -47,6 +50,14 @@ const Me = (props) => {
                 </Link>
           </Container>
         </LeftSection>
+        <div>
+            <Canvas>
+              <ambientLight color={0xffffff} intensity={0.5} />
+              <pointLight color={0xff4422} intensity={1} position={[-1,-1,3]} />
+              <pointLight color={0xff4422} intensity={1} position={[-1,-1,3]} />
+              <Three />
+            </Canvas>
+          </div>
       </MeSection>
     </>
   )
