@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BackgroundImage = styled.div`
   background-image: url('https://wallpaperaccess.com/full/99173.jpg');
   background-repeat: no-repeat;
-  background-size: 120rem;
+  background-size: 100%;
   
 `
 // https://free4kwallpapers.com/uploads/originals/2020/10/24/cityscape-photography--boston--usa--overcast--city-lights-wallpaper.jpg
