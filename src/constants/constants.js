@@ -11,7 +11,7 @@ export const projects = [
   {
     title: 'GytShop',
     description:"Full-stack e-commerce store featuring user authentication, full CRUD functionality, and the ability for users to add products to their cart and checkout. Built a proprietary API to seed data and utilized the third party Stripe API for payment processing. Developed in a team of four in three business days using Agile development methodology.",
-    image: 'https://lh3.google.com/u/0/d/18pbv_X3JYeyY8s6FzZH3V95u-Na7Iz2e=w320-h200-k-iv1',
+    image: 'https://github.com/daenamcclintock/Portfolio_Website/blob/main/src/constants/images/Gytshop.png?raw=true',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://gogytshop.herokuapp.com/',
     visit: 'https://github.com/daenamcclintock/GytShop-Client',
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: 'NFT Social',
     description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
-    image: 'https://lh3.google.com/u/0/d/1R_aN_tyFb-Pcu0XSfYiMA0jdLAht_Z3z=w320-h200-k-iv1',
+    image: 'https://github.com/daenamcclintock/Portfolio_Website/blob/main/src/constants/images/NFT_Social.png?raw=true',
     tags: ['HTML', 'Express', 'Mongo', 'Node'],
     source: 'https://google.com',
     visit: 'https://github.com/daenamcclintock/NFT_Social',

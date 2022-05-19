@@ -202,8 +202,8 @@ border: 2px solid white;
 border-radius: 999%;
 
 @media ${(props) => props.theme.breakpoints.sm} {
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   margin-left: 5rem;
   margin-top: 10rem;
   border: 2px solid white;
@@ -211,8 +211,8 @@ border-radius: 999%;
 }
 
 @media ${(props) => props.theme.breakpoints.md} {
-  height: 30rem;
-  width: 30rem;
+  height: 25rem;
+  width: 25rem;
   margin-left: 5rem;
   margin-top: 10rem;
   border: 2px solid white;
