@@ -42,5 +42,5 @@ export const TimeLineData = [
   { year: 'Spring 2020', text: "Graduated from UMass Amherst Cum Laude with Degrees in Finance and Economics", },
   { year: '2020/ 2021', text: "Worked for BNY Mellon Wealth Management in a Client-Facing Portfolio Analyst Role", },
   { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program" },
-  { year: 'Summer 2022', text: "Working on several Web3 Projects: NFT Art Generation, Minting, and dApp development ", },
+  { year: 'Summer 2022', text: "Working on Several Web3 Projects: NFT Art Generation, Minting, and dApp Development ", },
 ];
