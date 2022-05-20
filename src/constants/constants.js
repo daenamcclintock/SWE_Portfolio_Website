@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'LuxEstate',
-    description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilizing the MapBox API for visual mapping and the NPM Nodemailer package to allow users to email the agency.",
+    description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilizing the MapBox API for visual mapping.",
     image: '/images/LuxEstate.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
@@ -21,7 +21,7 @@ export const projects = [
     title: 'NFT Social',
     description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
     image: '/images/NFT_Social.png',
-    tags: ['HTML', 'Express', 'Mongo', 'Node'],
+    tags: ['Liquid', 'Express', 'Mongo', 'Node'],
     source: 'https://google.com',
     visit: 'https://github.com/daenamcclintock/NFT_Social',
     id: 2,

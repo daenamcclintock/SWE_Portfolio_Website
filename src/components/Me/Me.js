@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, Suspense } from "react";
 import { Card } from 'react-bootstrap'
 import { init } from "ityped";
 import Link from 'next/link';
@@ -8,8 +8,10 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
 import { Canvas } from '@react-three/fiber'
 import Three from "../ThreeJS/Three";
+import Earth from "../Earth/Earth";
 
 
 // import Three from "../ThreeJS/Three";
@@ -46,7 +48,7 @@ const Me = (props) => {
               <Button>Resume &nbsp;</Button>
             </Link> &nbsp;
                 <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
-                    <DownloadButton><MdFileDownload /></DownloadButton>
+                    <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
         </LeftSection>
@@ -56,8 +58,22 @@ const Me = (props) => {
               <pointLight color={0xff4422} intensity={1} position={[-1, -1, 3]} />
               <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
               <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
-              <Three />
+              <Suspense>
+                <Three />
+              </Suspense>
             </Canvas>
+            {/* <Canvas
+              camera={{ position: [0, 0, 10], fov: 40, far: 10000 }}
+              onCreated={({ gl }) => {
+                gl.gammaInput = true
+                gl.toneMapping = THREE.ACESFilmicToneMapping
+              }}>
+              <pointLight intensity={0.1} position={[10, 10, 10]} />
+              <rectAreaLight intensity={3} position={[0, 10, -10]} width={30} height={30} onUpdate={(self) => self.lookAt(new THREE.Vector3(0, 0, 0))} />
+              <Suspense fallback={null}>
+                <Earth />
+              </Suspense>
+            </Canvas> */}
           </div>
       </MeSection>
     </>

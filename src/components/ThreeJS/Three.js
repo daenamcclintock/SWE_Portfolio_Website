@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import Bitcoin from './Bitcoin.png'
 import * as THREE from 'three'
 
@@ -45,8 +45,8 @@ const Three = (props) => {
       onClick={(e) => click(!clicked)}
       onPointerOver={(e) => hover(true)}
       onPointerOut={(e) => hover(false)}>
-      <cylinderGeometry args={[0.7, 0.7, 0.15, 100]} />
-      <meshStandardMaterial map={hovered ? etherTexter : etherTexter} metalness={0.7} roughness={0.3} />
+      <cylinderGeometry args={[0.7, 0.7, 0.12, 100]} />
+      <meshStandardMaterial metalness={0.7} roughness={0.3} />
     </mesh>
   )
 }

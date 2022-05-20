@@ -4080,6 +4080,11 @@
     "ajv" "^6.12.5"
     "ajv-keywords" "^3.5.2"
 
+"scripts@^0.1.0":
+  "integrity" "sha1-PrGXE7WtH1i8PjnOY2Bta+qgBpM="
+  "resolved" "https://registry.npmjs.org/scripts/-/scripts-0.1.0.tgz"
+  "version" "0.1.0"
+
 "selfsigned@^2.0.1":
   "integrity" "sha512-LmME957M1zOsUhG+67rAjKfiWFox3SBxE/yymatMZsAx+oMrJ0YQ8AToOnyCm7xbeg2ep37IHLxdu0o2MavQOQ=="
   "resolved" "https://registry.npmjs.org/selfsigned/-/selfsigned-2.0.1.tgz"
