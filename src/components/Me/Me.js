@@ -51,17 +51,19 @@ const Me = (props) => {
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
-        </LeftSection>
-        <div>
+          {/* <div>
             <Canvas>
-              <ambientLight color={0xffffff} intensity={0.5} />
-              <pointLight color={0xff4422} intensity={1} position={[-1, -1, 3]} />
-              <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
-              <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
-              <Suspense>
-                <Three />
-              </Suspense>
-            </Canvas>
+                <ambientLight color={0xffffff} intensity={0.5} />
+                <pointLight color={0xff4422} intensity={1} position={[-1, -1, 3]} />
+                <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
+                <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
+                <Suspense>
+                  <Three position={[-3, 2, 1]}/>
+                </Suspense>
+              </Canvas>
+          </div> */}
+        </LeftSection>
+        {/* <div> */}
             {/* <Canvas
               camera={{ position: [0, 0, 10], fov: 40, far: 10000 }}
               onCreated={({ gl }) => {
@@ -74,7 +76,7 @@ const Me = (props) => {
                 <Earth />
               </Suspense>
             </Canvas> */}
-          </div>
+          {/* </div> */}
       </MeSection>
     </>
   )
