@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import me from './me.jpg'
+import Bitcoin from './Bitcoin.png'
 import * as THREE from 'three'
 
-const yo = require('./me.jpg');
-
 const Three = (props) => {
+    const bitcoin = require('./Bitcoin.png');
+    bitcoin.width = 1
+    bitcoin.height = 1
     // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
   // Hold state for hovered and clicked events
@@ -14,7 +15,27 @@ const Three = (props) => {
   // Subscribe this component to the render-loop, rotate the mesh every frame
   useFrame((state, delta) => (ref.current.rotation.x += 0.02, ref.current.rotation.y += 0.05))
   // Return the view, these are regular Threejs elements expressed in JSX
-  const texture = new THREE.TextureLoader().load(yo);
+  const bitcoinTexture = new THREE.TextureLoader().load(bitcoin);
+  const material = new THREE.MeshStandardMaterial({
+      map: bitcoinTexture
+  })
+  console.log(material)
+  Bitcoin.width = 1
+  Bitcoin.height = 1
+  const etherTexter = new THREE.TextureLoader().load(Bitcoin)
+  console.log(bitcoinTexture)
+  console.log(etherTexter)
+  console.log(bitcoin)
+  console.log(Bitcoin)
+
+  const loader = new THREE.TextureLoader()
+  loader.load(Bitcoin, function ( texture ) {
+      let material = new THREE.MeshStandardMaterial({
+          map: texture
+      })
+      console.log(material)
+  })
+  
 
   return (
     <mesh
@@ -25,7 +46,7 @@ const Three = (props) => {
       onPointerOver={(e) => hover(true)}
       onPointerOut={(e) => hover(false)}>
       <cylinderGeometry args={[0.7, 0.7, 0.15, 100]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial map={hovered ? etherTexter : etherTexter} metalness={0.7} roughness={0.3} />
     </mesh>
   )
 }
