@@ -36,7 +36,7 @@ const Technologies = () =>  (
       </TechItem>
       <TechItem>
         <SiThreedotjs size="5rem"/>
-        SiThreedotjs
+        THREE.JS
       </TechItem>
       <TechItem>
         <DiHtml5 size="5rem"/>
