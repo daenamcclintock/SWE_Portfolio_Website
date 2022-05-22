@@ -130,7 +130,7 @@ const Technologies = () =>  (
           <ListParagraph>
             Experience with <br />
             Git, Github, Heroku, <br />
-            and Postman
+            Netlify, and Postman
           </ListParagraph>
         </ListContainer>
       </ListItem>
