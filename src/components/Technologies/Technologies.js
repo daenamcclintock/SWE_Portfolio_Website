@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBootstrap, DiMongodb, DiGithubAlt, DiHeroku } from 'react-icons/di';
-import { FaAws, FaHardHat } from "react-icons/fa";
+import { FaAws, FaHardHat, FaEthereum } from "react-icons/fa";
 import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
 import { SiThreedotjs } from "react-icons/si";
@@ -97,6 +97,10 @@ const Technologies = () =>  (
       <TechItem>
         <SiWeb3Dotjs size="5rem"/>
         WEB3.JS
+      </TechItem>
+      <TechItem>
+        <FaEthereum size="5rem"/>
+        ETHERS.JS
       </TechItem>
       <TechItem>
         <FaHardHat size="5rem"/>
