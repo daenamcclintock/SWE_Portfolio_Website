@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Transfer Ether & NFTs',
+    description: "Web3 application used to transfer Ethereum or NFTs to any wallet address. App features two Solidity smart contracts that post information directly to the blockchain. Incorporated logic to query all recent transactions from the blockchain and display them in a section of the application.",
+    image: '/images/EtherTransfer.png',
+    tags: ['Solidity', 'Javascript', 'Web3.js', 'Vite'],
+    source: 'https://ether-nft-transfer.netlify.app/',
+    visit: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App',
+    id: 3,
+  },
+  {
     title: 'LuxEstate',
     description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilizing the MapBox API for visual mapping.",
     image: '/images/LuxEstate.png',
