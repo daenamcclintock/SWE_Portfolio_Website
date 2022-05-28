@@ -44,10 +44,10 @@ const Me = (props) => {
             </MeText>
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-            <Link href={'https://github.com/daenamcclintock/resume/blob/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
+            <Link href={'https://github.com/daenamcclintock/resume/blob/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
               <Button>Resume &nbsp;</Button>
             </Link> &nbsp;
-                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'}>
+                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
