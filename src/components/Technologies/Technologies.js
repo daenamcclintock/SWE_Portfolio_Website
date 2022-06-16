@@ -3,7 +3,7 @@ import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBoot
 import { FaAws, FaHardHat, FaEthereum } from "react-icons/fa";
 import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
-import { SiThreedotjs, SiIpfs } from "react-icons/si";
+import { SiThreedotjs, SiIpfs, SiTailwindcss } from "react-icons/si";
 
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
@@ -53,6 +53,10 @@ const Technologies = () =>  (
       <TechItem>
         <DiBootstrap size="5rem"/>
         BOOTSTRAP4
+      </TechItem>
+      <TechItem>
+        <SiTailwindcss size="5rem"/>
+        TAILWINDCSS
       </TechItem>
       <TechItem>
         <DiPython size="5rem"/>
