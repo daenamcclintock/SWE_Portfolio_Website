@@ -3,7 +3,7 @@ import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBoot
 import { FaAws, FaHardHat, FaEthereum } from "react-icons/fa";
 import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
-import { SiThreedotjs } from "react-icons/si";
+import { SiThreedotjs, SiIpfs } from "react-icons/si";
 
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
@@ -105,6 +105,10 @@ const Technologies = () =>  (
       <TechItem>
         <FaHardHat size="5rem"/>
         HARDHAT
+      </TechItem>
+      <TechItem>
+        <SiIpfs size="5rem"/>
+        IPFS
       </TechItem>
     </Tech>
     <List>
