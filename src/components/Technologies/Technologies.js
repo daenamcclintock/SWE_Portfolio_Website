@@ -147,8 +147,8 @@ const Technologies = () =>  (
           <ListTitle>Web3</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Solidity, Hardhat, Ganache, <br />
-            and Web3.js
+            Solidity, Hardhat, Ethers.js, Web3.js <br />
+            Ganache, and IPFS
           </ListParagraph>
         </ListContainer>
       </ListItem>
