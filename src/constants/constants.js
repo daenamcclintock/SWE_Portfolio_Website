@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: 'Transfer Ether & NFTs',
+    title: 'Transfer ETH & NFTs',
     description: "Web3 application used to transfer Ethereum or NFTs to any wallet address. App features two Solidity smart contracts that post information directly to the blockchain. Incorporated logic to query all recent transactions from the blockchain and display them in a section of the application.",
     image: '/images/EtherTransfer.png',
     tags: ['Solidity', 'Javascript', 'Web3.js', 'Vite'],

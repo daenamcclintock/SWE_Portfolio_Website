@@ -4,6 +4,7 @@ import { Spinner, Container, Carousel, Button, Card } from "react-bootstrap";
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import emailjs from '@emailjs/browser';
 import { ContactSection, Image, LeftSection, RightSection, ContactForm, ContactButton, ContactInput, ContactMessage, ContactLabel } from './ContactStyles';
+import Me from "../../../public/images/Me.png"
 
 const Contact = (props) => {
   const { msgAlert } = props
@@ -61,7 +62,7 @@ const Contact = (props) => {
         </LeftSection>
         <br />
         <RightSection>
-          <Image src={'https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/36742202_1801106396649810_5733688723485229056_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=174925&_nc_ohc=W8KvDrVgbycAX9ef_h7&_nc_ht=scontent-lax3-2.xx&oh=00_AT8eh8RJXN5SyQ960b1b1PFMRMez-B3Se5dJHFwVFCABsg&oe=629D3742'}/>
+          <Image src={"/images/Me.png"}/>
         </RightSection>
           <SectionDivider/>
     </ContactSection>

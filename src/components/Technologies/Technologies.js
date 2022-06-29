@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiReact, DiPostgresql, DiNodejsSmall, DiHtml5, DiPython, DiSass, DiBootstrap, DiMongodb, DiGithubAlt, DiHeroku } from 'react-icons/di';
 import { FaAws, FaHardHat, FaEthereum } from "react-icons/fa";
-import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain } from "react-icons/si";
+import { SiPostman, SiJavascript, SiNextdotjs, SiExpress, SiMongodb, SiDjango, SiHeroku, SiSolidity, SiWeb3Dotjs, SiBlockchaindotcom, SiHiveBlockchain, SiGraphql } from "react-icons/si";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
 import { SiThreedotjs, SiIpfs, SiTailwindcss } from "react-icons/si";
 
@@ -107,6 +107,10 @@ const Technologies = () =>  (
         ETHERS.JS
       </TechItem>
       <TechItem>
+        <SiGraphql size="5rem"/>
+        GRAPHQL
+      </TechItem>
+      <TechItem>
         <FaHardHat size="5rem"/>
         HARDHAT
       </TechItem>
@@ -148,7 +152,7 @@ const Technologies = () =>  (
       </ListItem>
       <ListItem>
         <ListContainer>
-          <ListTitle>Web3</ListTitle>
+          <ListTitle>Web 3.0</ListTitle>
           <ListParagraph>
             Experience with <br />
             Solidity, Hardhat, Ethers.js, Web3.js <br />

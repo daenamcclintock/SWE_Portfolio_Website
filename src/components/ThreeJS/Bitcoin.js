@@ -37,8 +37,8 @@ const Bitcoin = () => {
     roughness:0.3,
   })
 
-  var geometry = new THREE.CylinderGeometry(3,3,0.4,100);
-  const mesh = new THREE.Mesh(geometry,material)
+  let geometry = new THREE.CylinderGeometry(3,3,0.4,100);
+  const mesh = new THREE.Mesh(geometry, material)
 
   scene.add(mesh)
   camera.position.set(0,0,7)
