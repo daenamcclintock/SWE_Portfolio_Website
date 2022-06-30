@@ -7,7 +7,7 @@ export const projects = [
     source: 'https://ether-nft-transfer.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App',
     frontendCode: '',
-    id: 3,
+    id: 0,
   },
   {
     title: 'LuxEstate',
@@ -17,7 +17,7 @@ export const projects = [
     source: 'https://google.com',
     backendCode: 'https://github.com/daenamcclintock/Project-4-Client',
     frontendCode: '',
-    id: 0,
+    id: 1,
   },
   {
     title: 'GytShop',
@@ -28,7 +28,7 @@ export const projects = [
     // source: 'https://gogytshop.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/GytShop-Client',
     frontendCode: '',
-    id: 1,
+    id: 2,
   },
   {
     title: 'NFT Social',
@@ -39,7 +39,7 @@ export const projects = [
     // source: 'https://nftsocialmedia.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/NFT_Social',
     frontendCode: '',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Bringing Down The House!',
@@ -49,7 +49,16 @@ export const projects = [
     source: 'https://google.com',
     backendCode: 'https://github.com/daenamcclintock/bringing-down-the-house',
     frontendCode: '',
-    id: 3,
+    id: 4,
+  },
+  {
+    title: 'Portfolio Website',
+    description: "Frontend portfolio website to showcase my projects and skills. Built with NextJS to increase search engine optimization and allow for React integration. Incorporated the ThreeJS library to give the site more of a Web 3.0 feel.",
+    image: '/images/Portfolio_Website.png',
+    tags: ['Javascript', 'NextJS', 'React', 'ThreeJS'],
+    source: 'https://daenamcclintock-portfolio.netlify.app/',
+    frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
+    id: 5,
   },
 ];
 
