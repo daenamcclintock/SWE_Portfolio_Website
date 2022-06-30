@@ -5,7 +5,8 @@ export const projects = [
     image: '/images/EtherTransfer.png',
     tags: ['Solidity', 'Javascript', 'Web3.js', 'Vite'],
     source: 'https://ether-nft-transfer.netlify.app/',
-    visit: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App',
+    backendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App',
+    frontendCode: '',
     id: 3,
   },
   {
@@ -14,7 +15,8 @@ export const projects = [
     image: '/images/LuxEstate.png',
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'https://google.com',
-    visit: 'https://github.com/daenamcclintock/Project-4-Client',
+    backendCode: 'https://github.com/daenamcclintock/Project-4-Client',
+    frontendCode: '',
     id: 0,
   },
   {
@@ -24,7 +26,8 @@ export const projects = [
     tags: ['Mongo', 'Express', 'React', 'Node'],
     source: 'www.google.com',
     // source: 'https://gogytshop.herokuapp.com/',
-    visit: 'https://github.com/daenamcclintock/GytShop-Client',
+    backendCode: 'https://github.com/daenamcclintock/GytShop-Client',
+    frontendCode: '',
     id: 1,
   },
   {
@@ -34,7 +37,8 @@ export const projects = [
     tags: ['Liquid', 'Express', 'Mongo', 'Node'],
     source: 'www.google.com',
     // source: 'https://nftsocialmedia.herokuapp.com/',
-    visit: 'https://github.com/daenamcclintock/NFT_Social',
+    backendCode: 'https://github.com/daenamcclintock/NFT_Social',
+    frontendCode: '',
     id: 2,
   },
   {
@@ -43,7 +47,8 @@ export const projects = [
     image: 'https://static.turbosquid.com/Preview/2019/10/06__01_42_32/1.png86A9EB7C-E95E-431F-81C3-4FDD3D775C6ALarge.jpg',
     tags: ['Javascript', 'HTML', 'CSS', 'Bootstrap'],
     source: 'https://google.com',
-    visit: 'https://github.com/daenamcclintock/bringing-down-the-house',
+    backendCode: 'https://github.com/daenamcclintock/bringing-down-the-house',
+    frontendCode: '',
     id: 3,
   },
 ];

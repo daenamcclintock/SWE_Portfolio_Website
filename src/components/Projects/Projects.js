@@ -20,17 +20,25 @@ const Projects = () => (
             <CardInfo className="card-info">{project.description}</CardInfo>
             <div>
               <br />
-              <TitleContent><b>Stack</b></TitleContent>
+              <TitleContent><b>Tech Stack</b></TitleContent>
               <TagList>
                 {project.tags.map((tag, index) => {
                   return <Tag key={index}>{tag}</Tag>;
                 })}
               </TagList>
             </div>
-            <UtilityList>
-              <ExternalLinks href={project.visit} target="_blank">Code</ExternalLinks>
-              <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
-            </UtilityList>
+            {project.backendCode ? 
+              <UtilityList>
+                <ExternalLinks href={project.backendCode} target="_blank">Backend Code</ExternalLinks>
+                <ExternalLinks href={project.frontendCode} target="_blank">Frontend Code</ExternalLinks>
+                <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
+              </UtilityList> 
+            : 
+              <UtilityList>
+                <ExternalLinks href={project.visit} target="_blank">Code</ExternalLinks>
+                <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
+              </UtilityList>
+            }
           </BlogCard>
         );
       })}
