@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaDiscord } from "react-icons/fa";
-import { MdMarkEmailRead, MdEmail, MdOutlineMarkEmailRead, MdPhoneIphone } from "react-icons/md";
+import { MdEmail, MdPhoneIphone } from "react-icons/md";
 
 
 
