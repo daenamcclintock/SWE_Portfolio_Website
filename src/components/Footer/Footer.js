@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaDiscord } from "react-icons/fa";
+import { MdMarkEmailRead, MdEmail, MdOutlineMarkEmailRead, MdPhoneIphone } from "react-icons/md";
 
 
 
@@ -12,11 +13,11 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Cell</LinkTitle>
+          <LinkTitle>Cell <MdPhoneIphone /></LinkTitle>
           <LinkItem href="tel:781-733-3076">781-733-3076</LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
+          <LinkTitle>Email <MdEmail /></LinkTitle>
           <LinkItem href="mailto:daena.c.mcclintock@gmail.com">
             daena.c.mcclintock@gmail.com
           </LinkItem>

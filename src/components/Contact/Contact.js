@@ -56,7 +56,9 @@ const Contact = (props) => {
               <br />
                 <ContactMessage name="message" placeholder='Message' />
                 <br />
-                <ContactButton type="submit" value="Send">Send</ContactButton>
+                <ContactButton type="submit" value="Send">
+                  Send
+                </ContactButton>
             </form>
           </ContactForm>
         </LeftSection>

@@ -263,6 +263,7 @@ export const ContactButton = styled.button`
   background-color: transparent;
   color: rgba(255, 255, 255, 0.75);
   font-size: 18px;
+  display: inline-block
 
 
   &:hover {
