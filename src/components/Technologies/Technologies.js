@@ -95,6 +95,10 @@ const Technologies = () =>  (
         TYPESCRIPT
       </TechItem>
       <TechItem>
+        <SiGraphql size="5rem"/>
+        GRAPHQL
+      </TechItem>
+      <TechItem>
         <SiSolidity size="5rem"/>
           SOLIDITY
       </TechItem>
@@ -109,10 +113,6 @@ const Technologies = () =>  (
       <TechItem>
         <FaEthereum size="5rem"/>
         ETHERS.JS
-      </TechItem>
-      <TechItem>
-        <SiGraphql size="5rem"/>
-        GRAPHQL
       </TechItem>
       <TechItem>
         <FaHardHat size="5rem"/>
