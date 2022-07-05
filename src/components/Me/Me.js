@@ -12,6 +12,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { Canvas } from '@react-three/fiber'
 import Three from "../ThreeJS/Three";
 import Earth from "../Earth/Earth";
+import Bitcoin from "../ThreeJS/Bitcoin";
 
 
 // import Three from "../ThreeJS/Three";
@@ -51,17 +52,17 @@ const Me = (props) => {
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
-          {/* <div>
+          <div>
             <Canvas>
                 <ambientLight color={0xffffff} intensity={0.5} />
                 <pointLight color={0xff4422} intensity={1} position={[-1, -1, 3]} />
                 <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
                 <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
                 <Suspense>
-                  <Three position={[-3, 2, 1]}/>
+                  <Three position={[-3, 1, 2]}/>
                 </Suspense>
               </Canvas>
-          </div> */}
+          </div>
         </LeftSection>
         {/* <div> */}
             {/* <Canvas

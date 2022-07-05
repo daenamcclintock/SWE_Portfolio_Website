@@ -2,9 +2,12 @@ import React, { useRef, useState } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import Bitcoin from './Bitcoin.png'
 import * as THREE from 'three'
+import { NavItem } from 'react-bootstrap'
+import { MdDoNotDisturbOnTotalSilence } from 'react-icons/md'
 
 const Three = (props) => {
     const bitcoin = require('./Bitcoin.png');
+    console.log('this is bitcoin', bitcoin)
     bitcoin.width = 1
     bitcoin.height = 1
     // This reference gives us direct access to the THREE.Mesh object
