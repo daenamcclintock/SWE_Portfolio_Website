@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: 'LuxEstate',
-    description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilizing the MapBox API for visual mapping.",
+    description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
     image: '/images/LuxEstate.png',
     tags: ['Mongo', 'Express.js', 'React', 'Node'],
     source: 'https://google.com',
