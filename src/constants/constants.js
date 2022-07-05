@@ -60,7 +60,7 @@ export const projects = [
   },
   {
     title: 'Portfolio Website',
-    description: "Frontend portfolio website to showcase my projects and skills. Built with NextJS to increase search engine optimization and allow for React integration. Incorporated the ThreeJS library to give the site more of a Web 3.0 feel.",
+    description: "Frontend portfolio website to showcase my projects and skills. Built with Next.js to increase search engine optimization and allow for React integration. Incorporated the ThreeJS library to give the site more of a Web 3.0 feel.",
     image: '/images/Portfolio_Website.png',
     tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
