@@ -52,7 +52,7 @@ export const projects = [
   {
     title: 'Bringing Down The House!',
     description: "Interactive front-end blackjack game. Operates with logic mirroring casino-style blackjack and an AI simulating the dealer. Includes functionality to keep the card count and teach the user how to count cards. Individually developed over three business days.",
-    image: 'https://static.turbosquid.com/Preview/2019/10/06__01_42_32/1.png86A9EB7C-E95E-431F-81C3-4FDD3D775C6ALarge.jpg',
+    image: '/images/Bringing_Down_The_House.png',
     tags: ['Javascript', 'HTML', 'CSS', 'Bootstrap'],
     source: 'https://google.com',
     frontendCode: 'https://github.com/daenamcclintock/bringing-down-the-house',
