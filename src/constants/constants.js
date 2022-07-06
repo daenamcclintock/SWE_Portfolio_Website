@@ -1,10 +1,10 @@
 export const projects = [
   {
     title: 'NFT Marketplace',
-    description: "Fullstack NFT Markeplace where users can list and sell NFTs from their wallet and browse and purchase NFTs listed by other users. Application features full CRUD functionality as well as the ability for users to withdraw funds from NFT sales to their connected Web3 wallet. Smart contracts deployed to the Ethereum Rinkeby Testnet and database hosted on Moralis.",
-    image: '',
+    description: "Fullstack NFT Markeplace where users can list and sell NFTs from their wallet and browse and purchase NFTs listed by other users. Application features full CRUD functionality as well as the ability for users to withdraw funds from NFT sales to their connected Web3 wallet. Smart contracts deployed to the Ethereum Rinkeby Testnet and database hosted on Moralis. Wrote passing Chai test to ensure all Smart Contract code works correctly.",
+    image: '/images/NFT_Marketplace.png',
     tags: ['Solidity', 'Next.js', 'React', 'Moralis'],
-    source: '',
+    source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
     id: 0,
@@ -20,6 +20,16 @@ export const projects = [
     id: 1,
   },
   {
+    title: 'NFT Social',
+    description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
+    image: '/images/NFT_Social.png',
+    tags: ['Liquid', 'Express.js', 'Mongo', 'Node'],
+    source: 'https://nftsocialmedia.herokuapp.com/',
+    backendCode: 'https://github.com/daenamcclintock/NFT_Social',
+    frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
+    id: 2,
+  },
+  {
     title: 'LuxEstate',
     description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
     image: '/images/LuxEstate.png',
@@ -27,7 +37,7 @@ export const projects = [
     source: 'https://google.com',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 2,
+    id: 3,
   },
   {
     title: 'GytShop',
@@ -37,16 +47,6 @@ export const projects = [
     source: 'https://gogytshop.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/Gytshop-API',
     frontendCode: 'https://github.com/daenamcclintock/GytShop-Client',
-    id: 3,
-  },
-  {
-    title: 'NFT Social',
-    description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
-    image: '/images/NFT_Social.png',
-    tags: ['Liquid', 'Express.js', 'Mongo', 'Node'],
-    source: 'https://nftsocialmedia.herokuapp.com/',
-    backendCode: 'https://github.com/daenamcclintock/NFT_Social',
-    frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
     id: 4,
   },
   {
