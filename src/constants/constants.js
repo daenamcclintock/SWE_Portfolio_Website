@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: 'DeFi: Aave Borrowing & Lending',
-    description: "Wrote scripts to programatically deposit ETH / WETH as collateral, borrow DAI, repay the DAI loan, and lend out ETH using the Aave protocol. Utilized Aave smart contracts to call functions get and store WETH, lend out the WETH to earn interest, and pledge the WETH as collateral to borrow additional digital assets.",
+    description: "Wrote scripts to programatically deposit ETH / WETH as collateral, borrow the DAI stablecoin, repay the DAI loan, and lend out ETH using the Aave protocol. Utilized Aave smart contracts to call functions to get and store WETH, lend out the WETH to earn interest, and pledge the WETH as collateral to borrow additional digital assets.",
     image: '/images/Aave.png',
     tags: ['Solidity', 'Javascript', 'Hardhat', 'Chai'],
     source: 'www.google.com',
