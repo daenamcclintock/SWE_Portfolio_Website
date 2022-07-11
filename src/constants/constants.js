@@ -1,14 +1,4 @@
 export const projects = [
-  // public/images/DEX.png
-  {
-    title: 'DEX: Decentralized Exchange',
-    description: "Decentralized exchange built with the Moralis 1inch Plugin. Application features the ability to connect a Metamask wallet, choose a coin from your Web3 wallet, and swap a specified amount for a different coin or cryptocurrency. The Moralis plugin tracks real-time prices to allow for this transfer to be made without potential arbitrage opportunities.",
-    image: '/images/DEX.png',
-    tags: ['HTML', 'CSS', 'Bootstrap', 'Moralis'],
-    source: 'https://moralis-dex.netlify.app/',
-    frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
-    id: 0,
-  },
   {
     title: 'NFT Marketplace',
     description: "Fullstack NFT Markeplace where users can list and sell NFTs from their wallet and browse and purchase NFTs listed by other users. Application features full CRUD functionality as well as the ability for users to withdraw funds from NFT sales to their connected Web3 wallet. Smart contracts deployed to the Ethereum Rinkeby Testnet and database hosted on Moralis. Wrote passing Chai test to ensure all Smart Contract code works correctly.",
@@ -17,7 +7,7 @@ export const projects = [
     source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
-    id: 1,
+    id: 0,
   },
   {
     title: 'Transfer ETH & NFTs',
@@ -27,7 +17,7 @@ export const projects = [
     source: 'https://ether-nft-transfer.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/smart_contract',
     frontendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/client',
-    id: 2,
+    id: 1,
   },
   {
     title: 'DeFi: Aave Borrowing & Lending',
@@ -36,6 +26,15 @@ export const projects = [
     tags: ['Solidity', 'Javascript', 'Hardhat', 'Chai'],
     source: 'www.google.com',
     backendCode: 'https://github.com/daenamcclintock/hardhat-DeFi',
+    id: 2,
+  },
+  {
+    title: 'DEX: Decentralized Exchange',
+    description: "Decentralized exchange built with the Moralis 1inch Plugin. Application features the ability to connect a Metamask wallet, choose a coin from your Web3 wallet, and swap a specified amount for a different coin or cryptocurrency. The Moralis plugin tracks real-time prices to allow for this transfer to be made without potential arbitrage opportunities.",
+    image: '/images/DEX.png',
+    tags: ['HTML', 'CSS', 'Bootstrap', 'Moralis'],
+    source: 'https://moralis-dex.netlify.app/',
+    frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
     id: 3,
   },
   {
