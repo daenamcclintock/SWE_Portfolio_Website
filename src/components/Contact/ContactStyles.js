@@ -195,11 +195,11 @@ export const IconContainer = styled.div`
 
 
 export const Image = styled.img`
-height: 40rem;
-width: 40rem;
-margin-top: 15rem;
-border: 2px solid white;
-border-radius: 999%;
+  height: 40rem;
+  width: 40rem;
+  margin-top: 15rem;
+  border: 2px solid white;
+  border-radius: 999%;
 
 @media ${(props) => props.theme.breakpoints.sm} {
   height: 15rem;

@@ -111,7 +111,10 @@ export const ListItem = styled.li`
 @media ${props => props.theme.breakpoints.sm}{
   margin-bottom: 14px;
   max-width: 320px;
+  display: flex;
   flex-direction: row;
+  text-align: center;
+  align-items: center;
 }
 `
 
@@ -151,8 +154,8 @@ export const Tech = styled.ul`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 32px 0;
   }
 `
