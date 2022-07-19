@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaDiscord } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { MdLocationOn } from "react-icons/md";
