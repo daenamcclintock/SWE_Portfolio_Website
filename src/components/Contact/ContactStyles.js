@@ -263,8 +263,6 @@ export const ContactButton = styled.button`
   background-color: transparent;
   color: rgba(255, 255, 255, 0.75);
   font-size: 18px;
-  display: inline-block
-
 
   &:hover {
     border: 2px solid white;
@@ -273,4 +271,4 @@ export const ContactButton = styled.button`
     cursor: pointer;
     background-color: rgba(46, 204, 113, 0.65);
   }
-`
+  `

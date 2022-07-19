@@ -54,11 +54,11 @@ const Contact = (props) => {
               <br /><br />
               <ContactLabel>Message</ContactLabel>
               <br />
-                <ContactMessage name="message" placeholder='Message' />
-                <br />
-                <ContactButton type="submit" value="Send">
-                  Send
-                </ContactButton>
+              <ContactMessage name="message" placeholder='Message' />
+              <br />
+              <ContactButton type="submit" value="Send">
+                Send
+              </ContactButton>
             </form>
           </ContactForm>
         </LeftSection>
