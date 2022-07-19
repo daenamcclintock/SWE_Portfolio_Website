@@ -111,8 +111,8 @@ export const ListItem = styled.li`
 @media ${props => props.theme.breakpoints.sm}{
   margin-bottom: 14px;
   max-width: 320px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
@@ -174,7 +174,7 @@ export const TechItem = styled.li`
   @media ${props => props.theme.breakpoints.sm}{
   margin-bottom: 14px;
   max-width: 320px;
-  flex-direction: row;
+  flex-direction: column;
   }
 `
 
