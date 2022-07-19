@@ -4,9 +4,8 @@ import { init } from "ityped";
 import Link from 'next/link';
 import Modal from 'react-modal';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton } from './MeStyles';
+import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton, SectionTitle } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
 import { FaFileDownload } from "react-icons/fa";
 import { Canvas } from '@react-three/fiber'
