@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: 'Web3 Social',
+    description: "Fullstack social media application built for the web3 ecosystem to collaborate. Users sign in with a web3 wallet of choice, have the option to use NFTs as their profile picture, and can edit other spects of their profile. Users can post written content as well as photos, which are stored in a Moralis database. Smart contract developed with Solidity, tested with Chai, and deployed using Hardhat JS scripts. Frontend built with React.",
+    image: '/images/Web3Social.png',
+    tags: ['Solidity', 'Hardhat', 'React', 'Web3UIKit'],
+    // source: '',
+    backendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/Smart_Contract',
+    frontendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/web3_social',
+    id: 0,
+  },
+  {
     title: 'NFT Marketplace',
     description: "Fullstack NFT Markeplace where users can list and sell NFTs from their wallet and browse and purchase NFTs listed by other users. Application features full CRUD functionality as well as the ability for users to withdraw funds from NFT sales to their connected Web3 wallet. Smart contracts deployed to the Ethereum Rinkeby Testnet and database hosted on Moralis. Wrote passing Chai test to ensure all Smart Contract code works correctly.",
     image: '/images/NFT_Marketplace.png',
@@ -7,18 +17,18 @@ export const projects = [
     source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
-    id: 0,
-  },
-  {
-    title: 'Transfer ETH & NFTs',
-    description: "Web3 application used to transfer Ethereum or NFTs to any wallet address. App features two Solidity smart contracts that post information directly to the blockchain. Wrote Chai tests to ensure the accuracy of the smart contract code and functionality. Incorporated logic to query all recent transactions of the connected wallet and render them in a componenet of the application.",
-    image: '/images/EtherTransfer.png',
-    tags: ['Solidity', 'Javascript', 'Web3.js', 'Vite'],
-    // source: 'https://ether-nft-transfer.netlify.app/',
-    backendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/smart_contract',
-    frontendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/client',
     id: 1,
   },
+  // {
+  //   title: 'Transfer ETH & NFTs',
+  //   description: "Web3 application used to transfer Ethereum or NFTs to any wallet address. App features two Solidity smart contracts that post information directly to the blockchain. Wrote Chai tests to ensure the accuracy of the smart contract code and functionality. Incorporated logic to query all recent transactions of the connected wallet and render them in a componenet of the application.",
+  //   image: '/images/EtherTransfer.png',
+  //   tags: ['Solidity', 'Javascript', 'Web3.js', 'Vite'],
+  //   // source: 'https://ether-nft-transfer.netlify.app/',
+  //   backendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/smart_contract',
+  //   frontendCode: 'https://github.com/daenamcclintock/Web3_Ethereum_NFT_Transfer_App/tree/main/client',
+  //   id: 2,
+  // },
   {
     title: 'DeFi: Aave Borrowing & Lending',
     description: "Wrote scripts to programatically deposit ETH / WETH as collateral, borrow the DAI stablecoin, repay the DAI loan, and lend out ETH using the Aave protocol. Utilized Aave smart contracts to call functions to get and store WETH, lend out the WETH to earn interest, and pledge the WETH as collateral to borrow additional digital assets.",
@@ -26,7 +36,7 @@ export const projects = [
     tags: ['Solidity', 'Javascript', 'Hardhat', 'Chai'],
     // source: 'www.google.com',
     backendCode: 'https://github.com/daenamcclintock/hardhat-DeFi',
-    id: 2,
+    id: 3,
   },
   {
     title: 'DEX: Decentralized Exchange',
@@ -35,7 +45,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'Bootstrap', 'Moralis'],
     source: 'https://moralis-dex.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
-    id: 3,
+    id: 4,
   },
   {
     title: 'NFT Social',
@@ -45,7 +55,7 @@ export const projects = [
     // source: 'https://nftsocialmedia.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/NFT_Social',
     frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
-    id: 4,
+    id: 5,
   },
   {
     title: 'LuxEstate',
@@ -55,7 +65,7 @@ export const projects = [
     // source: '',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 5,
+    id: 6,
   },
   // {
   //   title: 'GytShop',
@@ -83,7 +93,7 @@ export const projects = [
     tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 6,
+    id: 7,
   },
 ];
 
