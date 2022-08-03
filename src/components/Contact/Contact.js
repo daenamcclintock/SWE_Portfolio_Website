@@ -1,13 +1,10 @@
-import React, { useState, useRef } from 'react';
-import { Spinner, Container, Carousel, Button, Card } from "react-bootstrap";
-
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import React, { useRef } from 'react';
+import { SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import emailjs from '@emailjs/browser';
 import { ContactSection, Image, LeftSection, RightSection, ContactForm, ContactButton, ContactInput, ContactMessage, ContactLabel } from './ContactStyles';
-import Me from "../../../public/images/Me.png"
 
 const Contact = (props) => {
-  const { msgAlert } = props
+  const { successNotficiation, failNotification } = props
 
   // Send Email
   const form = useRef();
@@ -17,19 +14,11 @@ const Contact = (props) => {
     emailjs.sendForm('gmail', 'portfolio_website', form.current, 'SbJwbvEIoRP7VcCav')
       .then((result) => {
           console.log(result.text);
-          msgAlert({
-            // heading: 'Success!',
-            message: 'Message sent successfully!',
-            // variant: 'success',
-          })
+          successNotficiation()
       },
       (error) => {
           console.log(error.text);
-          msgAlert({
-            // heading: 'Error ' + error.text,
-            message: 'Failed to send message. Please refresh and try again.',
-            // variant: 'danger',
-          })
+          failNotification()
       });
       e.target.reset()
   };

@@ -1,6 +1,4 @@
-import React, { useState, Fragment } from 'react'
-import { v4 as uuid } from 'uuid'
-
+import React from 'react'
 import Contact from '../components/Contact/Contact';
 import Me from '../components/Me/Me';
 import Projects from '../components/Projects/Projects';
@@ -8,50 +6,58 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-import AutoDismissAlert from '../constants/AutoDismissAlert';
 import { BackgroundImage } from '../components/Me/MeStyles';
+import { ReactNotifications, Store } from 'react-notifications-component'
+import 'react-notifications-component/dist/theme.css'
+import 'animate.css/animate.min.css';
 
 const Home = () => {
 
-  const [msgAlerts, setMsgAlerts] = useState([])
-
-  const deleteAlert = (id) => {
-		setMsgAlerts((prevState) => {
-			return (prevState.filter((msg) => msg.id !== id) )
-		})
+	const successNotficiation = () => {
+		Store.addNotification({
+			title: "Success!",
+			message: "Message successfully sent!",
+			type: "success",
+			container: "center",
+			animationIn: ["animate__animated", "animate__fadeIn"],
+			animationOut: ["animate__animated", "animate__fadeOut"],
+			dismiss: {
+			  duration: 5000,
+			  onScreen: true
+			}
+		});
 	}
 
-	const msgAlert = ({ heading, message, variant }) => {
-		const id = uuid()
-		setMsgAlerts(() => {
-			return (
-				[{ heading, message, variant, id }]
-      )
-		})
+	const failNotification = () => {
+		Store.addNotification({
+			title: "Error",
+			message: "Failed to send message. Please reload and try again.",
+			type: "danger",
+			container: "center",
+			animationIn: ["animate__animated", "animate__fadeIn"],
+			animationOut: ["animate__animated", "animate__fadeOut"],
+			dismiss: {
+			  duration: 5000,
+			  onScreen: true
+			}
+		});
 	}
 
   return (
-    <Layout>
-        <BackgroundImage>
-          <Section >
-              <Me />
-          </Section>
-        </BackgroundImage>
-      <Projects />
-      <Technologies />
-      <Timeline />
-      <Contact msgAlert={msgAlert} />
-      {msgAlerts.map((msgAlert) => (
-					<AutoDismissAlert
-						key={msgAlert.id}
-						heading={msgAlert.heading}
-						variant={msgAlert.variant}
-						message={msgAlert.message}
-						id={msgAlert.id}
-						deleteAlert={deleteAlert}
-					/>
-				))}
-    </Layout>
+	<>
+		<ReactNotifications />
+		<Layout>
+			<BackgroundImage>
+			<Section >
+				<Me />
+			</Section>
+			</BackgroundImage>
+		<Projects />
+		<Technologies />
+		<Timeline />
+		<Contact successNotficiation={successNotficiation} failNotification={failNotification} />
+		</Layout>
+	</>
   );
 };
 
