@@ -36,7 +36,7 @@ export const projects = [
     tags: ['Solidity', 'Javascript', 'Hardhat', 'Chai'],
     // source: 'www.google.com',
     backendCode: 'https://github.com/daenamcclintock/hardhat-DeFi',
-    id: 3,
+    id: 2,
   },
   {
     title: 'DEX: Decentralized Exchange',
@@ -45,7 +45,7 @@ export const projects = [
     tags: ['HTML', 'CSS', 'Bootstrap', 'Moralis'],
     source: 'https://moralis-dex.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
-    id: 4,
+    id: 3,
   },
   // {
   //   title: 'NFT Social',
@@ -57,16 +57,16 @@ export const projects = [
   //   frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
   //   id: 5,
   // },
-  {
-    title: 'LuxEstate',
-    description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
-    image: '/images/LuxEstate.png',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
-    // source: '',
-    backendCode: 'https://github.com/daenamcclintock/Project-4-API',
-    frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 5,
-  },
+  // {
+  //   title: 'LuxEstate',
+  //   description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
+  //   image: '/images/LuxEstate.png',
+  //   tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+  //   // source: '',
+  //   backendCode: 'https://github.com/daenamcclintock/Project-4-API',
+  //   frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
+  //   id: 5,
+  // },
   // {
   //   title: 'GytShop',
   //   description:"Full-stack e-commerce store featuring user authentication, full CRUD functionality, and the ability for users to add products to their cart and checkout. Built a proprietary API to seed data and utilized the third party Stripe API for payment processing. Developed in a team of four in three business days using Agile development methodology.",
@@ -93,7 +93,7 @@ export const projects = [
     tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 6,
+    id: 4,
   },
 ];
 
