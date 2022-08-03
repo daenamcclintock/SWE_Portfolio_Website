@@ -47,16 +47,16 @@ export const projects = [
     frontendCode: 'https://github.com/daenamcclintock/Moralis_DEX',
     id: 4,
   },
-  {
-    title: 'NFT Social',
-    description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
-    image: '/images/NFT_Social.png',
-    tags: ['Liquid', 'Express.js', 'MongoDB', 'Node.js'],
-    // source: 'https://nftsocialmedia.herokuapp.com/',
-    backendCode: 'https://github.com/daenamcclintock/NFT_Social',
-    frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
-    id: 5,
-  },
+  // {
+  //   title: 'NFT Social',
+  //   description: "Social media application designed for NFT owners to showcase their digital artwork. Application features secure user authentication and full CRUD functionality. Utilized the Moralis third party API to integrate search functionality and extract real-time data from the OpenSea NFT marketplace.",
+  //   image: '/images/NFT_Social.png',
+  //   tags: ['Liquid', 'Express.js', 'MongoDB', 'Node.js'],
+  //   // source: 'https://nftsocialmedia.herokuapp.com/',
+  //   backendCode: 'https://github.com/daenamcclintock/NFT_Social',
+  //   frontendCode: 'https://github.com/daenamcclintock/NFT_Social',
+  //   id: 5,
+  // },
   {
     title: 'LuxEstate',
     description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
@@ -65,7 +65,7 @@ export const projects = [
     // source: '',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 6,
+    id: 5,
   },
   // {
   //   title: 'GytShop',
@@ -93,7 +93,7 @@ export const projects = [
     tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 7,
+    id: 6,
   },
 ];
 
