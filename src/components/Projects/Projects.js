@@ -31,7 +31,11 @@ const Projects = () => (
               <UtilityList>
                 <ExternalLinks href={project.backendCode} target="_blank">Backend Code</ExternalLinks>
                 <ExternalLinks href={project.frontendCode} target="_blank">Frontend Code</ExternalLinks>
-                <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
+                {project.source ?
+                  <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
+                  :
+                  <p>No Frontend Website</p>
+                }
               </UtilityList> 
             : 
               <UtilityList>
