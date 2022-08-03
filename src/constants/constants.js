@@ -1,10 +1,10 @@
 export const projects = [
   {
     title: 'Web3 Social',
-    description: "Fullstack social media application built for the web3 ecosystem to collaborate. Users sign in with a web3 wallet of choice, have the option to use NFTs as their profile picture, and can edit other spects of their profile. Users can post written content as well as photos, which are stored in a Moralis database. Smart contract developed with Solidity, tested with Chai, and deployed using Hardhat JS scripts. Frontend built with React.",
+    description: "Fullstack social media application built for the web3 community to collaborate. Users sign in with a web3 wallet of choice, have the option to set owned NFTs as their profile picture, and can edit other aspects of their profile. Users can post written content as well as photos, which are stored in a Moralis database. Smart contract developed with Solidity, tested with Chai, and deployed using custom Hardhat JS scripts. Frontend built with React and Web3UIKit.",
     image: '/images/Web3Social.png',
     tags: ['Solidity', 'Hardhat', 'React', 'Web3UIKit'],
-    // source: '',
+    source: 'https://web3-social-media.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/Smart_Contract',
     frontendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/web3_social',
     id: 0,
