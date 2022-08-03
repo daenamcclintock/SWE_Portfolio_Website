@@ -84,7 +84,7 @@ const Me = (props) => {
                 <img src="/images/resume.png" alt="Resume" width="700" height="800"/>
               </Modal>
             {/* </Link> &nbsp; */}
-                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
+                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
