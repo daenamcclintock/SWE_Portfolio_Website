@@ -12,9 +12,20 @@ import { Canvas } from '@react-three/fiber'
 import Three from "../ThreeJS/Three";
 import Earth from "../Earth/Earth";
 import Bitcoin from "../ThreeJS/Bitcoin";
+// import Three from "../ThreeJS/Three";'
 
-
-// import Three from "../ThreeJS/Three";
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    maxHeight: '100vh',
+    overflowY: 'auto',
+  },
+};
 
 const Me = (props) => {
   const textRef = useRef();
@@ -27,6 +38,22 @@ const Me = (props) => {
       strings: ["Fullstack Engineer", "Blockchain Developer", "Freelance Developer"],
     });
   }, []);
+
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
  
 
   return (
@@ -44,9 +71,19 @@ const Me = (props) => {
             </MeText>
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-            <Link href={'https://github.com/daenamcclintock/resume/blob/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
-              <Button>Resume &nbsp;</Button>
-            </Link> &nbsp;
+            {/* <Link href={'https://github.com/daenamcclintock/resume/blob/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank"> */}
+              <Button onClick={openModal}>Resume &nbsp;</Button>
+              <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customStyles}
+                contentLabel="Resume Modal"
+              >
+                <a className="close" onClick={closeModal}></a>
+                <img src="/images/resume.png" alt="Resume" width="700" height="800"/>
+              </Modal>
+            {/* </Link> &nbsp; */}
                 <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
