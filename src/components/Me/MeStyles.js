@@ -82,7 +82,7 @@ export const SectionTitle = styled.div`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
+    display: ${({ open }) => open ? 'none' : 'flex'};
     line-height: 40px;
     font-size: ${(props) => props.main ? '28px' : '32px'};
     line-height: ${(props) => props.main ? '32px' : '40px'};

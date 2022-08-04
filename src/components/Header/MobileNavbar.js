@@ -13,10 +13,10 @@ const Nav = styled.nav`
   }
 `
 
-const MobileNavbar = () => {
+const MobileNavbar = (isOpen, open) => {
   return (
-    <Nav>
-      <Burger />
+    <Nav >
+      <Burger isOpen={isOpen} open={open}/>
     </Nav>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Contact from '../components/Contact/Contact';
 import Me from '../components/Me/Me';
 import Projects from '../components/Projects/Projects';
@@ -12,6 +12,11 @@ import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
 
 const Home = () => {
+	const [open, setOpen] = useState(false)
+
+	const isOpen = () => {
+		setOpen(open)
+	}
 
 	const successNotficiation = () => {
 		Store.addNotification({
@@ -47,10 +52,10 @@ const Home = () => {
   return (
 	<>
 		<ReactNotifications />
-		<Layout>
+		<Layout isOpen={isOpen} open={open}>
 			<BackgroundImage>
 				<Section >
-					<Me />
+					<Me isOpen={isOpen} open={open}/>
 				</Section>
 			</BackgroundImage>
 		<Projects />
