@@ -5,10 +5,8 @@ import Link from 'next/link';
 import Modal from 'react-modal';
 
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection, RightSection, Image, BackgroundImage, MeSection, MeText, Container, DownloadButton, ResumeButton, SectionTitle } from './MeStyles';
+import { LeftSection, MeSection, MeText, Container, DownloadButton, SectionTitle } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
-import { FaFileDownload } from "react-icons/fa";
-import { Canvas } from '@react-three/fiber'
 import Three from "../ThreeJS/Three";
 import Earth from "../Earth/Earth";
 import Bitcoin from "../ThreeJS/Bitcoin";
@@ -71,7 +69,6 @@ const Me = (props) => {
             </MeText>
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-            {/* <Link href={'https://github.com/daenamcclintock/resume/blob/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank"> */}
               <Button onClick={openModal}>Resume &nbsp;</Button>
               <Modal
                 isOpen={modalIsOpen}
@@ -83,7 +80,6 @@ const Me = (props) => {
                 <a className="close" onClick={closeModal}></a>
                 <img src="/images/resume.png" alt="Resume" width="700" height="800"/>
               </Modal>
-            {/* </Link> &nbsp; */}
                 <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>

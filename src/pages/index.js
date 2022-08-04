@@ -49,9 +49,9 @@ const Home = () => {
 		<ReactNotifications />
 		<Layout>
 			<BackgroundImage>
-			<Section >
-				<Me />
-			</Section>
+				<Section >
+					<Me />
+				</Section>
 			</BackgroundImage>
 		<Projects />
 		<Technologies />

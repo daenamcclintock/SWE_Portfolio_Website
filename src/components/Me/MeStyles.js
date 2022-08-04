@@ -5,6 +5,12 @@ export const BackgroundImage = styled.div`
   background-repeat: no-repeat;
   background-size: 100%;
   
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+  
+  }
 `
 // https://free4kwallpapers.com/uploads/originals/2020/10/24/cityscape-photography--boston--usa--overcast--city-lights-wallpaper.jpg
 
@@ -23,6 +29,7 @@ export const MeSection = styled.section`
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
+    margin-bottom: 0rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -30,6 +37,7 @@ export const MeSection = styled.section`
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" };
     width: calc(100vw - 32px);
     flex-direction: column;
+    margin-bottom: 0rem;
   }
 `
 
@@ -217,6 +225,14 @@ export const DownloadButton = styled.button`
     50% {transform: translateX(-50%) translateY(-50%)}
     75% {transform: translateX(-50%) translateY(-35%)}
     100% {transform: translateX(-50%) translateY(-50%)}
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
   }
 `
 
