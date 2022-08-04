@@ -26,7 +26,7 @@ const customStyles = {
   },
 };
 
-const Me = (props) => {
+const Me = (setOpen, open) => {
   const textRef = useRef();
 
   useEffect(() => {

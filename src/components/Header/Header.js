@@ -7,7 +7,7 @@ import { MdLocationOn } from "react-icons/md";
 import MobileNavbar from './MobileNavbar';
 import { MobileContainer, Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
-const Header = (isOpen, open) => {
+const Header = (setOpen, open) => {
 
   const navLinks = ["Projects", "Technologies", "About", "Contact"]
 
@@ -73,7 +73,7 @@ const Header = (isOpen, open) => {
               <SocialIcons href="https://www.discordapp.com/users/dcm13#3056">
                 <FaDiscord size="3rem"/>
               </SocialIcons>
-              <MobileNavbar isOpen={isOpen} open={open}/>
+              <MobileNavbar setOpen={setOpen} open={open}/>
             </Div3>
         </MobileContainer>
       </>

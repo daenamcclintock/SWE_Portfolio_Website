@@ -12,11 +12,6 @@ import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
 
 const Home = () => {
-	const [open, setOpen] = useState(false)
-
-	const isOpen = () => {
-		setOpen(open)
-	}
 
 	const successNotficiation = () => {
 		Store.addNotification({
@@ -52,16 +47,16 @@ const Home = () => {
   return (
 	<>
 		<ReactNotifications />
-		<Layout isOpen={isOpen} open={open}>
+		<Layout>
 			<BackgroundImage>
 				<Section >
-					<Me isOpen={isOpen} open={open}/>
+					<Me />
 				</Section>
 			</BackgroundImage>
-		<Projects />
-		<Technologies />
-		<Timeline />
-		<Contact successNotficiation={successNotficiation} failNotification={failNotification} />
+			<Projects />
+			<Technologies />
+			<Timeline />
+			<Contact successNotficiation={successNotficiation} failNotification={failNotification} />
 		</Layout>
 	</>
   );
