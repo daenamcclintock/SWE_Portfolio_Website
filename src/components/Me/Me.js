@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Modal from 'react-modal';
 
 import Button from '../../styles/GlobalComponents/Button';
+import MobileButton from "../../styles/GlobalComponents/mobileButton";
 import { LeftSection, MeSection, MeText, Container, DownloadButton, SectionTitle } from './MeStyles';
 import { MdFileDownload } from "react-icons/md";
 import Three from "../ThreeJS/Three";
@@ -69,6 +70,9 @@ const Me = (props) => {
             </MeText>
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
+              <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
+                  <MobileButton>Resume</MobileButton>
+              </Link>
               <Button onClick={openModal}>Resume &nbsp;</Button>
               <Modal
                 isOpen={modalIsOpen}
