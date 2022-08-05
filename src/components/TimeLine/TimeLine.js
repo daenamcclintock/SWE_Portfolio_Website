@@ -6,7 +6,7 @@ import { TimeLineData } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-const Timeline = () => {
+const Timeline = ({ open }) => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -43,7 +43,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section id="about" open={open}>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
       After two years in traditional finance, I left to pursue a passion for the intersection of software development and decentralized finance. I currently work on the development of Web3 dApps ranging many areas and applications of DeFi.

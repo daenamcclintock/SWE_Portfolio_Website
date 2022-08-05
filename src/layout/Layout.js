@@ -8,7 +8,7 @@ export const Layout = ({ children, open, setOpen }) => {
     <Container>
      <Header open={open} setOpen={setOpen}/>
      <main>{children}</main> 
-     <Footer/>
+     <Footer open={open}/>
     </Container>
   )
 }

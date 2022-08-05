@@ -11,6 +11,7 @@ export const FooterWrapper = styled.section`
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
+	display: ${({ open }) => open ? "none": null}
   }
 `
 

@@ -59,7 +59,7 @@ const Me = ({ open }) => {
 
   return (
     <>
-      <MeSection row nopadding>
+      <MeSection row nopadding open={open}>
         <LeftSection>
           {open ?
             null

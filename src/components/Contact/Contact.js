@@ -3,8 +3,7 @@ import { SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import emailjs from '@emailjs/browser';
 import { ContactSection, Image, LeftSection, RightSection, ContactForm, ContactButton, ContactInput, ContactMessage, ContactLabel } from './ContactStyles';
 
-const Contact = (props) => {
-  const { successNotficiation, failNotification } = props
+const Contact = ({ successNotficiation, failNotification, open }) => {
 
   // Send Email
   const form = useRef();
@@ -24,7 +23,7 @@ const Contact = (props) => {
   };
 
   return (
-    <ContactSection row nopadding id="contact">
+    <ContactSection row nopadding id="contact" open={open}>
         <LeftSection>
           <SectionTitle main center>Let's Chat!</SectionTitle>
           <ContactForm>

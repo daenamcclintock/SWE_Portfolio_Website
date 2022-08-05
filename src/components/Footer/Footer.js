@@ -8,9 +8,9 @@ import { MdEmail, MdPhoneIphone } from "react-icons/md";
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
-const Footer = () => {
+const Footer = ({ open }) => {
   return (
-    <FooterWrapper>
+    <FooterWrapper open={open}>
       <LinkList>
         <LinkColumn>
           <LinkTitle>Cell <MdPhoneIphone /></LinkTitle>
