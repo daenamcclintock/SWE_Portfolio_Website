@@ -14,10 +14,6 @@ import 'animate.css/animate.min.css';
 const Home = () => {
 	const [open, setOpen] = useState(false)
 
-	const openBurger = () => {
-		setOpen(!open)
-	}
-
 	const successNotficiation = () => {
 		Store.addNotification({
 			title: "Success!",
@@ -52,16 +48,16 @@ const Home = () => {
   return (
 	<>
 		<ReactNotifications />
-		<Layout openBurger={openBurger} open={open} setOpen={setOpen}>
-			<BackgroundImage>
-				<Section >
+		<Layout open={open} setOpen={setOpen}>
+			<BackgroundImage open={open}>
+				<Section open={open}>
 					<Me open={open}/>
 				</Section>
 			</BackgroundImage>
-			<Projects />
-			<Technologies />
-			<Timeline />
-			<Contact successNotficiation={successNotficiation} failNotification={failNotification} />
+			<Projects open={open}/>
+			<Technologies open={open}/>
+			<Timeline open={open}/>
+			<Contact successNotficiation={successNotficiation} failNotification={failNotification} open={open}/>
 		</Layout>
 	</>
   );

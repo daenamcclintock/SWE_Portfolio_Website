@@ -205,7 +205,8 @@ export const Image = styled.img`
   height: 15rem;
   width: 15rem;
   margin-left: 5rem;
-  margin-top: 10rem;
+  display: center;
+  margin-top: 0rem;
   border: 2px solid white;
   border-radius: 999%;
 }
@@ -213,8 +214,9 @@ export const Image = styled.img`
 @media ${(props) => props.theme.breakpoints.md} {
   height: 25rem;
   width: 25rem;
-  margin-left: 5rem;
-  margin-top: 10rem;
+  display: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 2px solid white;
   border-radius: 999%;
 }
@@ -224,6 +226,13 @@ export const ContactForm = styled.div`{
   display: flex;
   flex-direction: column;
   padding: 10px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+   
+  }
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0px;
+  }
 }
 `
 

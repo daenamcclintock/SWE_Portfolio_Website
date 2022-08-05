@@ -3,10 +3,10 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import { Container } from './LayoutStyles'
 
-export const Layout = ({ children, openBurger, open, setOpen }) => {
+export const Layout = ({ children, open, setOpen }) => {
   return (
     <Container>
-     <Header openBurger={openBurger} open={open} setOpen={setOpen}/>
+     <Header open={open} setOpen={setOpen}/>
      <main>{children}</main> 
      <Footer/>
     </Container>
