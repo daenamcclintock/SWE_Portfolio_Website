@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 
@@ -15,7 +15,7 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #0D2538;
     position: fixed;
-    transform: ${({ openBurgerNav }) => openBurgerNav ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
@@ -28,20 +28,21 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ openBurgerNav }) => {
+const RightNav = ({ open, setOpen }) => {
+
   return (
-    <Ul openBurgerNav={openBurgerNav}>
+    <Ul open={open}>
         <Link href="#projects">
-          <li>{navLinks[0]}</li>
+          <a onClick={() => setOpen(!open)}><li>{navLinks[0]}</li></a>
         </Link>
         <Link href="#tech">
-          <li>{navLinks[1]}</li>
+        <a onClick={() => setOpen(!open)}><li>{navLinks[1]}</li></a>
         </Link>
         <Link href="#about">
-          <li>{navLinks[2]}</li>
+        <a onClick={() => setOpen(!open)}><li>{navLinks[2]}</li></a>
         </Link>
         <Link href="#contact">
-          <li>{navLinks[3]}</li>
+        <a onClick={() => setOpen(!open)}><li>{navLinks[3]}</li></a>
         </Link>
     </Ul>
   )
