@@ -54,7 +54,6 @@ export const LeftSection = styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
-
     margin: 0 auto;
   }
   @media ${(props) => props.theme.breakpoints.md} {
@@ -256,6 +255,14 @@ export const ContactInput = styled.input`
   transition: width 0.4s ease-in-out;
   box-sizing: border-box;
 
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 80%;
+  }
+
 `
 
 export const ContactMessage = styled.textarea`
@@ -266,6 +273,15 @@ export const ContactMessage = styled.textarea`
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+    height: 120px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 80%;
+  }
 `
 
 export const ContactButton = styled.button`
