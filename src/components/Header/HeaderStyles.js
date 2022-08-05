@@ -23,6 +23,7 @@ export const Div1 = styled.div`
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
+    display: ${({ open }) => open ? "none": null}
   }
 `;
 export const Div2 = styled.div`

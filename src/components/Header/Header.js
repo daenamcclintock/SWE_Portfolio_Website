@@ -56,7 +56,7 @@ const Header = ({ open, setOpen }) => {
           </Div3>
         </Container>
         <MobileContainer>
-            <Div1>
+            <Div1 open={open}>
               <Link href="/">
                 <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
                   <BiWorld size="3rem" /> &nbsp; <span><MdLocationOn /> Boston</span>
