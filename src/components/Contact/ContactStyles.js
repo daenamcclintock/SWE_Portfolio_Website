@@ -206,9 +206,11 @@ export const Image = styled.img`
 @media ${(props) => props.theme.breakpoints.sm} {
   height: 15rem;
   width: 15rem;
-  margin-left: 5rem;
-  display: center;
-  margin-top: 0rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 2px solid white;
   border-radius: 999%;
 }
@@ -216,7 +218,9 @@ export const Image = styled.img`
 @media ${(props) => props.theme.breakpoints.md} {
   height: 25rem;
   width: 25rem;
-  display: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: 2px solid white;
