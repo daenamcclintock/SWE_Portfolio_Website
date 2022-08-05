@@ -32,16 +32,16 @@ const RightNav = ({ openBurgerNav }) => {
   return (
     <Ul openBurgerNav={openBurgerNav}>
         <Link href="#projects">
-        <li>{navLinks[0]}</li>
+          <li>{navLinks[0]}</li>
         </Link>
         <Link href="#tech">
-        <li>{navLinks[1]}</li>
+          <li>{navLinks[1]}</li>
         </Link>
         <Link href="#about">
-        <li>{navLinks[2]}</li>
+          <li>{navLinks[2]}</li>
         </Link>
         <Link href="#contact">
-        <li>{navLinks[3]}</li>
+          <li>{navLinks[3]}</li>
         </Link>
     </Ul>
   )
