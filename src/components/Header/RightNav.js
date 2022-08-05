@@ -15,7 +15,7 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #0D2538;
     position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ openBurgerNav }) => openBurgerNav ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
@@ -28,9 +28,9 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ openBurgerNav }) => {
   return (
-    <Ul open={open}>
+    <Ul openBurgerNav={openBurgerNav}>
         <Link href="#projects">
         <li>{navLinks[0]}</li>
         </Link>

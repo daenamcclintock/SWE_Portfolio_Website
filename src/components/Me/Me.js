@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, Suspense } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Card } from 'react-bootstrap'
 import { init } from "ityped";
 import Link from 'next/link';
@@ -26,7 +26,9 @@ const customStyles = {
   },
 };
 
-const Me = (setOpen, open) => {
+const Me = ({ open }) => {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
   const textRef = useRef();
 
   useEffect(() => {
@@ -38,8 +40,9 @@ const Me = (setOpen, open) => {
     });
   }, []);
 
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  // function setBurger() {
+  //   setOpenBurger(openBurgerNav)
+  // }
 
   function openModal() {
     setIsOpen(true);
@@ -53,34 +56,49 @@ const Me = (setOpen, open) => {
   function closeModal() {
     setIsOpen(false);
   }
- 
 
   return (
     <>
       <MeSection row nopadding>
         <LeftSection>
-          <SectionTitle main center>
-            Daena McClintock
-          </SectionTitle>
+          {open ?
+            null
+            :
+            <SectionTitle main center>
+              Daena McClintock
+            </SectionTitle>
+            }
           <Container>
+          {open ?
+            null
+            :
             <MeText>
               <h3>
                 I am a <span style={{color: 'rgba(255, 255, 255, 0.95)'}} ref={textRef}></span>
               </h3>
             </MeText>
+          }
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
+            {open ?
+              null
+              :
               <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
                   <MobileButton>Resume</MobileButton>
               </Link>
+            }
+            {open ?
+              null
+              :
               <Button onClick={openModal}>Resume &nbsp;</Button>
+            }
               <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
                 onRequestClose={closeModal}
                 style={customStyles}
                 contentLabel="Resume Modal"
-              >
+                >
                 <a className="close" onClick={closeModal}></a>
                 <img src="/images/resume.png" alt="Resume" width="700" height="800"/>
               </Modal>
@@ -95,7 +113,7 @@ const Me = (setOpen, open) => {
               <pointLight color={0x44ff88} intensity={1} position={[1, 2, 3]} />
               <pointLight color={0xdd3311} intensity={1} position={[0, 3, 2]} />
               <Suspense>
-                <Three position={[-3, 1, 2]}/>
+              <Three position={[-3, 1, 2]}/>
               </Suspense>
             </Canvas> */}
           </div>
