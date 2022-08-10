@@ -33,11 +33,11 @@ export const MeSection = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: flex;
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" };
     width: calc(100vw - 32px);
     flex-direction: column;
     margin-bottom: 0rem;
+    display: ${({ open }) => open ? "none": "flex"}
   }
 `
 

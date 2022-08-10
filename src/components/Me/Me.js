@@ -61,37 +61,21 @@ const Me = ({ open }) => {
     <>
       <MeSection row nopadding open={open}>
         <LeftSection>
-          {open ?
-            null
-            :
-            <SectionTitle main center>
+          <SectionTitle main center>
               Daena McClintock
             </SectionTitle>
-            }
           <Container>
-          {open ?
-            null
-            :
             <MeText>
               <h3>
                 I am a <span style={{color: 'rgba(255, 255, 255, 0.95)'}} ref={textRef}></span>
               </h3>
             </MeText>
-          }
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-            {open ?
-              null
-              :
               <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
                   <MobileButton>Resume</MobileButton>
               </Link>
-            }
-            {open ?
-              null
-              :
               <Button onClick={openModal}>Resume &nbsp;</Button>
-            }
               <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
