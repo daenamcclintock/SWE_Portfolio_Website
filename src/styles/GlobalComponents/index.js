@@ -184,11 +184,16 @@ export const ButtonBack = styled.div`
   overflow: hidden;
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    bottom: 10rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     width: ${({ alt }) => alt ? '150px' : '184px'};
     height: ${({ alt }) => alt ? '52px' : '48px'};
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    font-size: ${({ alt }) => alt ? '22px' : '18px'};
     margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
+    bottom: 7rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -239,7 +244,7 @@ export const ButtonFront = styled.button`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    font-size: ${({ alt }) => alt ? '20px' : '18px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -301,14 +306,6 @@ export const MobileButtonBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: ${({ alt }) => alt ? '150px' : '184px'};
-    height: ${({ alt }) => alt ? '52px' : '48px'};
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
-    margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
-    display: none;
-  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 10;

@@ -26,6 +26,12 @@ export const MeSection = styled.section`
   grid-template-columns: 1fr 1fr;
   margin-bottom: 30rem;
 
+  @media ${(props) => props.theme.breakpoints.lg} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
     flex-direction: column;
@@ -225,6 +231,11 @@ export const DownloadButton = styled.button`
     50% {transform: translateX(-50%) translateY(-50%)}
     75% {transform: translateX(-50%) translateY(-35%)}
     100% {transform: translateX(-50%) translateY(-50%)}
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    position: relative;
+    bottom: 10rem;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
