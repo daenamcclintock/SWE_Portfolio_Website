@@ -59,7 +59,7 @@ const Me = ({ open }) => {
 
   return (
     <>
-      <MeSection row nopadding open={open}>
+      <MeSection row open={open}>
         <LeftSection>
           <SectionTitle main center>
               Daena McClintock

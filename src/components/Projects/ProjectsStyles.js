@@ -14,6 +14,18 @@ padding: 3rem;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;
+@media ${(props) => props.theme.breakpoints.lg} {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+@media ${(props) => props.theme.breakpoints.md} {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+}
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
@@ -22,11 +34,17 @@ row-gap: 3rem;
 }
 
 `
-export const BlogCard = styled.div`
+export const ProjectCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 70%;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 80%;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }

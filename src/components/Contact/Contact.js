@@ -23,7 +23,7 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
   };
 
   return (
-    <ContactSection row nopadding id="contact" open={open}>
+    <ContactSection row  id="contact" open={open}>
         <LeftSection>
           <SectionTitle main center>Let's Chat!</SectionTitle>
           <ContactForm>

@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { ProjectCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
 const Projects = ({ open }) => (
-  <Section nopadding id="projects" open={open}>
+  <Section id="projects" open={open}>
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((project, index) => {
         return (
-          <BlogCard key={index}>
+          <ProjectCard key={index}>
           <Img src={project.image} />
             <TitleContent>
               <HeaderThree title>{project.title}</HeaderThree>
@@ -39,7 +39,7 @@ const Projects = ({ open }) => (
                   : <p>No Frontend Website</p>
                 }
               </UtilityList>
-          </BlogCard>
+          </ProjectCard>
         );
       })}
     </GridContainer>
