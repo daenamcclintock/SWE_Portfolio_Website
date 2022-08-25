@@ -4,6 +4,7 @@ export const BackgroundImage = styled.div`
   background-image: url('https://wallpaperaccess.com/full/99173.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
+  opacity: 80%;
   
   @media ${(props) => props.theme.breakpoints.md} {
   }
