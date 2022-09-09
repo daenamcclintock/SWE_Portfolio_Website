@@ -178,10 +178,3 @@ export const TechItem = styled.li`
   flex-direction: column;
   }
 `
-
-export const TechStyle = styled.div`
-  &:hover{
-    background: #801414;
-
-  }
-`

@@ -7,7 +7,7 @@ import { SiThreedotjs, SiIpfs, SiTailwindcss } from "react-icons/si";
 
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem, TechStyle } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListParagraph, ListTitle, Tech, TechItem } from './TechnologiesStyles';
 
 const Technologies = ({ open }) =>  (
   <Section id="tech" open={open}>
