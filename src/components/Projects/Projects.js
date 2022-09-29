@@ -36,7 +36,7 @@ const Projects = ({ open }) => (
                 : <p></p>}
                 {project.source ?
                   <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
-                  : <WebsiteUnderConstruction>Frontend Website Under Construction</WebsiteUnderConstruction>
+                  : <WebsiteUnderConstruction>Website Under Construction</WebsiteUnderConstruction>
                 }
               </UtilityList>
           </ProjectCard>
