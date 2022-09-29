@@ -65,7 +65,7 @@ export const projects = [
     // source: '',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 5,
+    id: 2,
   },
   {
     title: 'GytShop',
@@ -75,7 +75,7 @@ export const projects = [
     source: 'https://gogytshop.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/Gytshop-API',
     frontendCode: 'https://github.com/daenamcclintock/GytShop-Client',
-    id: 5,
+    id: 3,
   },
   // {
   //   title: 'Bringing Down The House!',
