@@ -115,9 +115,15 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #801414;
-
 }
-`;
+`
+export const WebsiteUnderConstruction = styled.a`
+color:#d4c0c0;
+font-size: 1.6rem;
+padding:1rem 1.5rem;
+border-radius: 15px;
+transition: 0.5s;
+`
 
 export const TagList = styled.ul`
 display: flex;

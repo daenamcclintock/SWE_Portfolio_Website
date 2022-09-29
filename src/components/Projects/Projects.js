@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { ProjectCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img, WebsiteUnderConstruction } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
@@ -36,7 +36,7 @@ const Projects = ({ open }) => (
                 : <p></p>}
                 {project.source ?
                   <ExternalLinks href={project.source} target="_blank">Website</ExternalLinks>
-                  : <p>No Frontend Website</p>
+                  : <WebsiteUnderConstruction>Frontend Website Under Construction</WebsiteUnderConstruction>
                 }
               </UtilityList>
           </ProjectCard>
