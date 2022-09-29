@@ -125,6 +125,10 @@ border-radius: 15px;
 transition: 0.5s;
 `
 
+export const TagListDiv = styled.div`
+
+`
+
 export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
