@@ -72,7 +72,7 @@ const Me = ({ open }) => {
             </MeText>
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
-              <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
+              <Link href={'https://github.com/daenamcclintock/SWE_Resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
                   <MobileButton>Resume</MobileButton>
               </Link>
               <Button onClick={openModal}>Resume &nbsp;</Button>
@@ -84,9 +84,9 @@ const Me = ({ open }) => {
                 contentLabel="Resume Modal"
                 >
                 <a className="close" onClick={closeModal}></a>
-                <img src="/images/resume.png" alt="Resume" width="700" height="800"/>
+                <img src="/images/SWE-resume.png" alt="Resume" width="700" height="800"/>
               </Modal>
-                <Link href={'https://github.com/daenamcclintock/resume/raw/main/Daena%20McClintock%20-%20Web3%20Resume.pdf'} target="_blank">
+                <Link href={'https://github.com/daenamcclintock/SWE_Resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
                     <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
