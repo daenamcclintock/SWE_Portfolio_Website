@@ -2,9 +2,6 @@ import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaDiscord } from "react-icons/fa";
 import { MdEmail, MdPhoneIphone } from "react-icons/md";
-
-
-
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
