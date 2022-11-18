@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: 'CinderBlox',
+    description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML financial screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
+    image: '/images/CinderBlox.png',
+    tags: ['Node.js', 'React', 'AlgoSDK', 'Styled-Components'],
+    // source: 'https://web3-social-media.netlify.app/',
+    backendCode: 'https://github.com/daenamcclintock/CinderBlox_Backend',
+    frontendCode: 'https://github.com/daenamcclintock/Cinderblox_Frontend',
+    id: 0,
+  },
+  {
     title: 'Web3 Social',
     description: "Fullstack social media application built for the web3 community to collaborate. Application features user secure sign in with a web3 wallet, the ability to set owned NFTs as a profile picture, and edit other aspects of the social media profile. Users can post written content as well as photos, which are stored in IPFS and accessed via a Moralis database. Smart contract developed in Solidity, tested with Chai, and deployed using custom Hardhat JS scripts. Frontend built with React and Web3UIKit.",
     image: '/images/Web3Social.png',
@@ -7,7 +17,7 @@ export const projects = [
     source: 'https://web3-social-media.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/Smart_Contract',
     frontendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/web3_social',
-    id: 0,
+    id: 1,
   },
   {
     title: 'NFT Marketplace',
@@ -17,7 +27,7 @@ export const projects = [
     source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
-    id: 1,
+    id: 2,
   },
   // {
   //   title: 'Transfer ETH & NFTs',
@@ -61,21 +71,21 @@ export const projects = [
     title: 'LuxEstate',
     description: "Luxury real estate application designed for realtors to list properties and users to browse and inquire about properties. LuxEstate features two different user types, full CRUD functionality, and complex logic for searching and filtering properties by location as well as a multitude of metrics. Utilized the MapBox API for visual mapping.",
     image: '/images/LuxEstate.png',
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+    tags: ['MongoDB', 'Express.js', 'Node.js', 'React'],
     // source: '',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 2,
+    id: 3,
   },
   {
     title: 'GytShop',
     description:"Full-stack e-commerce store featuring user authentication, full CRUD functionality, and the ability for users to add products to their cart and checkout. Built a proprietary API to seed data and utilized the third party Stripe API for payment processing. Developed in a team of four in three business days using Agile development methodology.",
     image: '/images/Gytshop.png',
-    tags: ['Mongo', 'Express.js', 'React', 'Node'],
+    tags: ['MongoDB', 'Express.js', 'Node.js', 'React'],
     source: 'https://gogytshop.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/Gytshop-API',
     frontendCode: 'https://github.com/daenamcclintock/GytShop-Client',
-    id: 3,
+    id: 4,
   },
   // {
   //   title: 'Bringing Down The House!',
@@ -90,10 +100,10 @@ export const projects = [
     title: 'Portfolio Website',
     description: "Frontend portfolio website to showcase my projects and skills. Built with Next.js to increase search engine optimization and allow for React integration. Incorporated the ThreeJS library to give the site more of a Web 3.0 feel.",
     image: '/images/Portfolio_Website.png',
-    tags: ['Javascript', 'Next.js', 'React', 'Three.js'],
+    tags: ['Javascript', 'Next.js', 'React', 'Styled-Components'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 4,
+    id: 5,
   },
 ];
 
@@ -102,7 +112,7 @@ export const TimeLineData = [
   { year: 'Spring 2020', text: "Graduated from UMass Amherst Cum Laude with Degrees in Finance and Economics", },
   { year: '2020/ 2021', text: "Worked for BNY Mellon Wealth Management in a Client-Facing Portfolio Analyst Role", },
   { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program" },
-  { year: 'Summer 2022', text: "Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup", },
+  { year: 'Summer 2022', text: "Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup" },
 ];
 
 export const articles = [
