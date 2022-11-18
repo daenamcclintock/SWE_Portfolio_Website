@@ -4,7 +4,7 @@ export const projects = [
     description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML financial screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
     image: '/images/CinderBlox.png',
     tags: ['Node.js', 'React', 'AlgoSDK', 'Styled-Components'],
-    // source: 'https://web3-social-media.netlify.app/',
+    // source: 'cinderblox.io',
     backendCode: 'https://github.com/daenamcclintock/CinderBlox_Backend',
     frontendCode: 'https://github.com/daenamcclintock/Cinderblox_Frontend',
     id: 0,
