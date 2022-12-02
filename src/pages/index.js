@@ -26,16 +26,16 @@ const Home = () => {
 		if (res.data.IPv4) {
 			// setIPDetected(true)
 		}
-		return res.data.IPv4
+		return res.data
 	}
 
-	const sendEmail = (ip) => {
+	const sendEmail = (ip, location) => {
 		// e.preventDefault();
 
 		const templateParams = {
 			name: "New Portoflio Website Visitor",
 			email: "Not provided",
-			message: {ip},
+			message: `IP Address: ${ip}, Location: ${location}`,
 			subject: "New IP Address 😈",
 		}
 		
@@ -52,8 +52,9 @@ const Home = () => {
 		const ipInfo = async () => {
 			await getIp()
 				.then((result) => {
-					console.log(result.toString())
-					sendEmail(result.toString())
+					console.log(result.IPv4.toString())
+					console.log(result.city + ", " + result.state + " " + result.country_name + " " + result.postal)
+					sendEmail(result.IPv4.toString(), result.city + ", " + result.state + " " + result.country_name + " " + result.postal)
 				})
 				.catch((error) => {
 					console.log(error)
