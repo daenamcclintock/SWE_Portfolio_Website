@@ -138,6 +138,16 @@ export const InputDiv = styled.div`
 
 export const TextArea = styled.textarea`
     border-radius: 5px;
+    padding: 5px;
+
+    &:hover {
+        border-color: #646cff;
+    }
+
+    &:focus
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
 `
 
 export const GenerateButtonDiv = styled.div`
@@ -168,12 +178,53 @@ export const GenerateButton = styled.button`
         outline: 4px auto -webkit-focus-ring-color;
     }
 `
+export const ImagesDiv = styled.div`
+
+`
 
 export const ResultImageDiv = styled.div`
+    display: ${(props) => props.results.length > 1 ? 'grid' : 'flex'};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ModalTitleDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ModalTitle = styled.h1`
 
 `
 
 export const ResultImage = styled.img`
     margin-top: 20px;
     width: 350px;
+`
+
+export const SelectDropdownDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const SelectDropdown = styled.select`
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+
+    &:hover {
+        border-color: #646cff;
+    }
+
+    &:focus
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+`
+
+export const DropdownOption = styled.option`
+
 `
