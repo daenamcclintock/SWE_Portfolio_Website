@@ -128,3 +128,52 @@ export const Tag = styled.li`
 color: #d8bfbf;
 font-size: 1.5rem;
 `
+
+export const InputDiv = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const TextArea = styled.textarea`
+    border-radius: 5px;
+`
+
+export const GenerateButtonDiv = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const GenerateButton = styled.button`
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: white;
+
+    &:hover {
+        border-color: #646cff;
+    }
+
+    &:focus
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+`
+
+export const ResultImageDiv = styled.div`
+
+`
+
+export const ResultImage = styled.img`
+    margin-top: 20px;
+    width: 350px;
+`
