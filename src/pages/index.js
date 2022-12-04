@@ -60,8 +60,9 @@ const Home = () => {
 					console.log(error)
 				})
 		}
-		ipInfo()
+		// ipInfo()
 	})
+	console.log(process.env.OpenAI_API_KEY)
 
 	const successNotficiation = () => {
 		Store.addNotification({
