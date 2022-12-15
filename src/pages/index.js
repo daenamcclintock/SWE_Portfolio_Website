@@ -62,7 +62,7 @@ const Home = () => {
 					console.log(error)
 				})
 		}
-		// ipInfo()
+		ipInfo()
 	})
 
 	useEffect(() => {
