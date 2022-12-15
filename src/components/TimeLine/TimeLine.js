@@ -45,10 +45,10 @@ const Timeline = ({ open }) => {
   return (
     <Section id="about" open={open}>
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
+      <SectionText data-aos='fade-down' data-aos-duration='1000'>
       After two years in traditional finance, I left to pursue a passion for the intersection of software development and decentralized finance. I currently work on the development of Web3 dApps ranging many areas and applications of DeFi.
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll} data-aos='fade-up' data-aos-duration='1000'>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode

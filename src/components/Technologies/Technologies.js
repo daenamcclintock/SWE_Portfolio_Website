@@ -125,7 +125,7 @@ const Technologies = ({ open }) =>  (
     </Tech>
     <List>
       <ListItem>
-        <ListContainer>
+        <ListContainer data-aos='fade-right' data-aos-duration='1000'>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experiece with <br />
@@ -135,7 +135,7 @@ const Technologies = ({ open }) =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <ListContainer>
+        <ListContainer data-aos='fade-down' data-aos-duration='1000'>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
@@ -145,7 +145,7 @@ const Technologies = ({ open }) =>  (
         </ListContainer>
       </ListItem>
       <ListItem>
-        <ListContainer>
+        <ListContainer data-aos='fade-up'>
           <ListTitle>Management & Deployment</ListTitle>
           <ListParagraph>
             Experience with <br />
@@ -154,7 +154,7 @@ const Technologies = ({ open }) =>  (
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      <ListItem>
+      <ListItem data-aos='fade-left' data-aos-duration='1000'>
         <ListContainer>
           <ListTitle>Web 3.0</ListTitle>
           <ListParagraph>

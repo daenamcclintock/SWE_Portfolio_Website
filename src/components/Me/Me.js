@@ -65,7 +65,7 @@ const Me = ({ open }) => {
               Daena McClintock
             </SectionTitle>
           <Container>
-            <MeText>
+            <MeText data-aos='fade-right' data-aos-duration='1000'>
               <h3>
                 I am a <span style={{color: 'rgba(255, 255, 255, 0.95)'}} ref={textRef}></span>
               </h3>

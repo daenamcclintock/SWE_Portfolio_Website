@@ -26,7 +26,7 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
     <ContactSection row  id="contact" open={open}>
         <LeftSection>
           <SectionTitle main center>Let's Chat!</SectionTitle>
-          <ContactForm>
+          <ContactForm data-aos='fade-right' data-aos-duration='1000'>
             <form ref={form} onSubmit={sendEmail}>
               <ContactLabel>Name</ContactLabel>
               <br />
@@ -51,7 +51,7 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
           </ContactForm>
         </LeftSection>
         <br />
-        <RightSection>
+        <RightSection data-aos='fade-left' data-aos-duration='1000'>
           <Image src={"/images/Me.png"}/>
         </RightSection>
           <SectionDivider/>

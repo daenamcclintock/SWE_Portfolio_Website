@@ -11,7 +11,7 @@ const Projects = ({ open }) => (
     <GridContainer>
       {projects.map((project, index) => {
         return (
-          <ProjectCard key={index}>
+          <ProjectCard key={index} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
           <Img src={project.image} />
             <TitleContent>
               <HeaderThree title>{project.title}</HeaderThree>
