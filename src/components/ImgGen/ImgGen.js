@@ -79,7 +79,7 @@ const ImgGen = ({ open }) => {
                     results.map((result, i) => {
                         console.log(result)
                         return (
-                            <ProjectCard key={i} results={results}>
+                            <ProjectCard key={i} results={results} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
                                 <Img src={result} alt="result" />
                             </ProjectCard>
                         )
