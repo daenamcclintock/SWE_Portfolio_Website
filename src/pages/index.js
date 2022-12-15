@@ -13,6 +13,8 @@ import 'animate.css/animate.min.css';
 import { Popover } from '@typeform/embed-react'
 import axios from 'axios';
 import emailjs from '@emailjs/browser';
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Home = () => {
 	const [open, setOpen] = useState(false)
@@ -62,7 +64,10 @@ const Home = () => {
 		}
 		// ipInfo()
 	})
-	console.log(process.env.OpenAI_API_KEY)
+
+	useEffect(() => {
+		Aos.init({})
+	}, [])
 
 	const successNotficiation = () => {
 		Store.addNotification({

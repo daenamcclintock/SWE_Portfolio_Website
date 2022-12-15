@@ -61,7 +61,7 @@ const Me = ({ open }) => {
     <>
       <MeSection row open={open}>
         <LeftSection>
-          <SectionTitle main center>
+          <SectionTitle main center data-aos='fade-left' data-aos-duration='1000'>
               Daena McClintock
             </SectionTitle>
           <Container>
@@ -73,9 +73,9 @@ const Me = ({ open }) => {
           </Container>
           <Container style={{marginTop: '10rem', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
               <Link href={'https://github.com/daenamcclintock/SWE_Resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
-                  <MobileButton>Resume</MobileButton>
+                  <MobileButton data-aos='fade-up' data-aos-duration='1000'>Resume</MobileButton>
               </Link>
-              <Button onClick={openModal}>Resume &nbsp;</Button>
+              <Button data-aos='fade-up' data-aos-duration='1000' onClick={openModal}>Resume &nbsp;</Button>
               <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
@@ -87,7 +87,7 @@ const Me = ({ open }) => {
                 <img src="/images/SWE-resume.png" alt="Resume" width="700" height="800"/>
               </Modal>
                 <Link href={'https://github.com/daenamcclintock/SWE_Resume/raw/main/Daena%20McClintock%20-%20SWE%20Resume.pdf'} target="_blank">
-                    <DownloadButton><MdFileDownload size={'1.7rem'}/></DownloadButton>
+                    <DownloadButton data-aos='fade-up' data-aos-duration='1000'><MdFileDownload size={'1.7rem'}/></DownloadButton>
                 </Link>
           </Container>
           <div>
