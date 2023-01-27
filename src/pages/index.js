@@ -15,6 +15,7 @@ import axios from 'axios';
 import emailjs from '@emailjs/browser';
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import Interests from '../components/Interests/Interests';
 
 const Home = () => {
 	const [open, setOpen] = useState(false)
@@ -119,6 +120,7 @@ const Home = () => {
 				<Projects open={open}/>
 				<Technologies open={open}/>
 				<Timeline open={open}/>
+				{/* <Interests open={open}/> */}
 				<Contact successNotficiation={successNotficiation} failNotification={failNotification} open={open}/>
 				<Popover id="o2iHrdTU" />
 			</Layout>

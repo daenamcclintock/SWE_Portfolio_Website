@@ -23,6 +23,7 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
   };
 
   return (
+    <>
     <ContactSection row  id="contact" open={open}>
         <LeftSection>
           <SectionTitle main center>Let's Chat!</SectionTitle>
@@ -54,8 +55,8 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
         <RightSection data-aos='fade-left' data-aos-duration='1000'>
           <Image src={"/images/Me.png"}/>
         </RightSection>
-          <SectionDivider/>
     </ContactSection>
+    </>
   )
 };
 

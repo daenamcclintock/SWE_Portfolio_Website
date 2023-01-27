@@ -213,9 +213,11 @@ export const DownloadButton = styled.button`
 
   &:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border: 1px solid white;
+    transition: 1s ease-in-out;
+    color: white;
   }
 
   &hover::before {

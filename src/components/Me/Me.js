@@ -3,7 +3,6 @@ import { Card } from 'react-bootstrap'
 import { init } from "ityped";
 import Link from 'next/link';
 import Modal from 'react-modal';
-
 import Button from '../../styles/GlobalComponents/Button';
 import MobileButton from "../../styles/GlobalComponents/mobileButton";
 import { LeftSection, MeSection, MeText, Container, DownloadButton, SectionTitle } from './MeStyles';

@@ -108,11 +108,12 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 'Summer 2019', text: "Interned with BNY Mellon's Buyside Equity Research Division", },
+  // { year: 'Summer 2019', text: "Interned with BNY Mellon's Buyside Equity Research Division", },
   { year: 'Spring 2020', text: "Graduated from UMass Amherst Cum Laude with Degrees in Finance and Economics", },
   { year: '2020/ 2021', text: "Worked for BNY Mellon Wealth Management in a Client-Facing Portfolio Analyst Role", },
   { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program" },
-  { year: 'Summer 2022', text: "Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup" },
+  { year: 'Summer 2022', text: " Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup" },
+  { year: 'Winter 2023', text: "Working as a Fullstack Engineer at ThriveIn, a social and freelance app for creatives built on the NEAR Protocol" },
 ];
 
 export const articles = [
