@@ -24,38 +24,38 @@ const Contact = ({ successNotficiation, failNotification, open }) => {
 
   return (
     <>
-    <ContactSection row  id="contact" open={open}>
-        <LeftSection>
-          <SectionTitle main center>Let's Chat!</SectionTitle>
-          <ContactForm data-aos='fade-right' data-aos-duration='1000'>
-            <form ref={form} onSubmit={sendEmail}>
-              <ContactLabel>Name</ContactLabel>
-              <br />
-                <ContactInput type="text" name="name" placeholder='Name' />
-              <br /><br />
-              <ContactLabel>Email</ContactLabel>
-              <br />
-                <ContactInput type="email" name="email" placeholder='Email'  />
-              <br /><br />
-              <ContactLabel>Subject</ContactLabel>
-              <br />
-                <ContactInput type="text" name="subject"  placeholder='Subject'/>
-              <br /><br />
-              <ContactLabel>Message</ContactLabel>
-              <br />
-              <ContactMessage name="message" placeholder='Message' />
-              <br />
-              <ContactButton type="submit" value="Send">
-                Send
-              </ContactButton>
-            </form>
-          </ContactForm>
-        </LeftSection>
-        <br />
-        <RightSection data-aos='fade-left' data-aos-duration='1000'>
-          <Image src={"/images/Me.png"}/>
-        </RightSection>
-    </ContactSection>
+      <ContactSection row  id="contact" open={open}>
+          <LeftSection>
+            <SectionTitle main center>Let's Chat!</SectionTitle>
+            <ContactForm data-aos='fade-right' data-aos-duration='1000'>
+              <form ref={form} onSubmit={sendEmail}>
+                <ContactLabel>Name</ContactLabel>
+                <br />
+                  <ContactInput type="text" name="name" placeholder='Name' />
+                <br /><br />
+                <ContactLabel>Email</ContactLabel>
+                <br />
+                  <ContactInput type="email" name="email" placeholder='Email'  />
+                <br /><br />
+                <ContactLabel>Subject</ContactLabel>
+                <br />
+                  <ContactInput type="text" name="subject"  placeholder='Subject'/>
+                <br /><br />
+                <ContactLabel>Message</ContactLabel>
+                <br />
+                <ContactMessage name="message" placeholder='Message' />
+                <br />
+                <ContactButton type="submit" value="Send">
+                  Send
+                </ContactButton>
+              </form>
+            </ContactForm>
+          </LeftSection>
+          <br />
+          <RightSection data-aos='fade-left' data-aos-duration='1000'>
+            <Image src={"/images/Me.png"}/>
+          </RightSection>
+      </ContactSection>
     </>
   )
 };

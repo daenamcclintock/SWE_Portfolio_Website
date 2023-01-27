@@ -23,7 +23,6 @@ export const ContactSection = styled.section`
     flex-direction: column;
     display: ${({ open }) => open ? "none": null}
   }
-
 `
 
 export const Boxes = styled.div`
