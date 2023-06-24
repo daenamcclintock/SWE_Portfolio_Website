@@ -1,23 +1,33 @@
 export const projects = [
   {
-    title: 'ThriveIN',
-    description: "Building a global social platform designed for creatives. Rust smart contracts deployed to the NEAR Protocol to handle freelance workflow and functionality. Using the NEAR API and SDK to interact with smart contracts, store data in the database, and display on the frontend. Magic Authenication and NEAR Wallet sign-in. Web2 backend built with Nest, Prisma, and Typescript. Frontend built with Next, React, and TailwindCSS.",
-    image: '/images/ThriveIN.png',
-    tags: ['Nest', 'Rust', 'NEAR Protocol', 'Next'],
-    source: 'https://thrivein.io/',
-    backendCode: 'https://github.com/ThriveIn/NestJS',
-    frontendCode: 'https://github.com/ThriveIn/www',
+    title: 'Buenro',
+    description: "Building a global co-living property rental platform designed for digital nomads. Backend built with Nest, Typescript, and MongoDB. Hosted on AWS with custom magic link and FIDO2 (biometric) authentication. Frontend built with Next13, React, and TailwindCSS, and hosted on Vercel. Solo built an admin dashboard to allow senior management to view application metrics and analytics as well as perform CRUD operations on all data models.",
+    image: '/images/Buenro_Logo.png',
+    tags: ['Nest', 'AWS', 'MongoDB', 'Typescript'],
+    source: 'https://www.buen.ro/',
+    backendCode: 'https://github.com/Buenro/backend',
+    frontendCode: 'https://github.com/Buenro/www',
     id: 0,
   },
+  // {
+  //   title: 'ThriveIN',
+  //   description: "Building a global social platform designed for creatives. Rust smart contracts deployed to the NEAR Protocol to handle freelance workflow and functionality. Using the NEAR API and SDK to interact with smart contracts, store data in the database, and display on the frontend. Magic Authenication and NEAR Wallet sign-in. Web2 backend built with Nest, Prisma, and Typescript. Frontend built with Next, React, and TailwindCSS.",
+  //   image: '/images/ThriveIN.png',
+  //   tags: ['Nest', 'Rust', 'NEAR Protocol', 'Next'],
+  //   source: 'https://thrivein.io/',
+  //   backendCode: 'https://github.com/ThriveIn/NestJS',
+  //   frontendCode: 'https://github.com/ThriveIn/www',
+  //   id: 0,
+  // },
   {
     title: 'CinderBlox',
-    description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML financial screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
+    description: "Application focussed on tokenization of commercial real estate assets. Developed with the MERN stack, the application features custom multi-factor authetication, KYC and AML screening, as well as trading functionality to buy and sell real estate-backed security tokens. Utilized the AlgoSDK to progammatically deploy security tokens onto the Alorand blockchain and built custom logic for buying, selling, and trading the tokens.",
     image: '/images/CinderBlox.png',
     tags: ['Node.js', 'React', 'AlgoSDK', 'Styled-Components'],
     // source: 'https://cinderblox.io/',
     backendCode: 'https://github.com/daenamcclintock/CinderBlox_Backend',
     frontendCode: 'https://github.com/daenamcclintock/Cinderblox_Frontend',
-    id: 0,
+    id: 1,
   },
   {
     title: 'Web3 Social',
@@ -27,7 +37,7 @@ export const projects = [
     source: 'https://web3-social-media.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/Smart_Contract',
     frontendCode: 'https://github.com/daenamcclintock/web3_social_media/tree/main/web3_social',
-    id: 1,
+    id: 2,
   },
   {
     title: 'NFT Marketplace',
@@ -37,7 +47,7 @@ export const projects = [
     source: 'https://fullstack-nft-marketplace.netlify.app/',
     backendCode: 'https://github.com/daenamcclintock/nft-marketplace-backend-contracts',
     frontendCode: 'https://github.com/daenamcclintock/nft-marketplace-frontend-moralis',
-    id: 2,
+    id: 3,
   },
   // {
   //   title: 'Transfer ETH & NFTs',
@@ -85,7 +95,7 @@ export const projects = [
     // source: '',
     backendCode: 'https://github.com/daenamcclintock/Project-4-API',
     frontendCode: 'https://github.com/daenamcclintock/Project-4-Client',
-    id: 3,
+    id: 4,
   },
   {
     title: 'GytShop',
@@ -95,7 +105,7 @@ export const projects = [
     source: 'https://gogytshop.herokuapp.com/',
     backendCode: 'https://github.com/daenamcclintock/Gytshop-API',
     frontendCode: 'https://github.com/daenamcclintock/GytShop-Client',
-    id: 4,
+    id: 5,
   },
   // {
   //   title: 'Bringing Down The House!',
@@ -113,7 +123,7 @@ export const projects = [
     tags: ['Javascript', 'Next.js', 'React', 'Styled-Components'],
     source: 'https://daenamcclintock-portfolio.netlify.app/',
     frontendCode: 'https://github.com/daenamcclintock/Portfolio_Website',
-    id: 5,
+    id: 6,
   },
 ];
 
@@ -122,14 +132,15 @@ export const TimeLineData = [
   { year: 'Spring 2020', text: "Graduated from UMass Amherst Cum Laude with Degrees in Finance and Economics", },
   { year: '2020/ 2021', text: "Worked for BNY Mellon Wealth Management in a Client-Facing Portfolio Analyst Role", },
   { year: 'Spring 2022', text: "Completed General Assembly's Software Engineering Immersive Program" },
-  { year: 'Summer 2022', text: " Contracting as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup" },
-  { year: 'Winter 2023', text: "Working as a Fullstack Engineer at ThriveIn, a social and freelance app for creatives built on the NEAR Protocol" },
+  { year: 'Summer 2022', text: " Contracted as a Fullstack Blockchain Engineer for Cinderblox, a Silicon Valley-based Startup" },
+  // { year: 'Winter 2023', text: "Working as a Fullstack Engineer at ThriveIn, a social and freelance app for creatives built on the NEAR Protocol" },
+  { year: 'Spring 2023', text: "Working as a Backend Engineer at Buenro, Building a Co-Living Property Rental Platform Designed for Digital Nomads" },
 ];
 
 export const articles = [
   {
     title: 'My (Quarter Life Crisis) Career Transition',
-    description: "Why I Left Investment Research for Blockchain Development",
+    description: "Why I Left Investment Research for Software Development",
     image: '/images/Web3Social.png',
     tags: ['Investments', 'Research', 'Blockchain', 'Software Development'],
     source: 'https://web3-social-media.netlify.app/',
